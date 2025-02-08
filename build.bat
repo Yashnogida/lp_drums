@@ -1,2 +1,2 @@
 python py/main.py
-lilypond ly/main.ly TEST
+lilypond -o pdf/%1 ly/main.ly

@@ -11,7 +11,7 @@
 
 \markup \vspace #1   % Space Between Title and first staff
 
-notes = \relative c' {
+notes = \relative c'' {
   \time 2/4
   \include "notes.ly"
 }
@@ -25,7 +25,6 @@ notes = \relative c' {
 \layout {
   \context {
     \Staff \RemoveEmptyStaves
-    % To use the setting globally, uncomment the following line:
     \override VerticalAxisGroup.remove-first = ##t
   }
 }
