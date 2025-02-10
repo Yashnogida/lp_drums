@@ -5,15 +5,19 @@
 }
 
 \header {  
-    title = "Kick Doubles 16th Notes"
+    \include "title.ly"
     tagline = ""
 }
 
 \markup \vspace #1   % Space Between Title and first staff
 
-notes = \relative c'' {
+notes = \relative c' {
   \time 2/4
-  \include "notes.ly"
+  \fixed c''
+  {
+    \clef treble
+    \include "notes.ly"
+  }
 }
 
 
