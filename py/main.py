@@ -3,9 +3,9 @@ import string
 
 
 note_sym = {
-  0 : "c16  ",
-  1 : "c16->",
-  2 : "f,16 ",
+  0 : "c8  ",
+  1 : "c8->",
+  2 : "f,8 ",
 }
 
 notes_per_measure = 12
@@ -14,15 +14,15 @@ notes_per_measure = 12
 
 def main():
   
-  
   if (len(sys.argv) < 2):  # default file name
-    title = "main"          
+    title = "main"
   else:
     title = sys.argv[1]
     title = title.replace('_', ' ').title()
   
   with open("ly/title.ly", "w") as file:
     file.write(fr'title = "{title}"')
+    file.write(f'instrument = "{title}"\n')
 
   note_array = []
 
@@ -39,8 +39,16 @@ def main():
         continue
 
     note_array = [note_sym[x] for x in note_array]
+
     
-    f.write(' '.join(note_array))
+    # Deal with Triplets
+    if ((notes_per_measure % 3) == 0):
+        for chunk in chunker(note_array, 3):
+          ly_string = rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
+          f.write(ly_string)
+    else:
+      f.write(' '.join(note_array))
+    
     f.write('\n')
     
   f.close()
@@ -48,40 +56,27 @@ def main():
 
 def rule(note_array, arr_length):
 
-  # Checks that a note occurs a maximum of twice consecutively
   for note in range(arr_length):
-      if (note_array[-2 + note] == note_array[-1 + note] == note_array[0 + note] == 0):
-          return True
+
+    na_n2 = note_array[-2 + note]
+    na_n1 = note_array[-1 + note]
+    na_0 = note_array[note]
+
+  # Checks that a note occurs a maximum of twice consecutively
+    if (na_n1 == na_0 == 0):
+        return True
       
   # Checks that a note occurs a maximum of twice consecutively
-  for note in range(arr_length):
-      if (note_array[-2 + note] == note_array[-1 + note] == note_array[0 + note] == 1):
-          return True
+    if (na_n1 == na_0 == 1):
+        return True
 
   # Checks that a note occurs a maximum of twice consecutively
-  for note in range(arr_length):
-      if (note_array[-2 + note] == note_array[-1 + note] == note_array[0 + note] == 2):
-          return True
+    if (na_n2 == na_n1 == na_0 == 2):
+        return True
 
-
-  for note in range(arr_length):
-
-  if 2 not in note_array:
-    return True
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  # Checks that a note occurs a maximum of twice consecutively
+    if (((na_n2 == 0) or ((na_n2 == 1))) and ((na_n1 == 0) or ((na_n1 == 1))) and (na_0 != 2)):
+        return True
 
   return False
 
@@ -94,6 +89,10 @@ def convert_base(n, b):
         digits.append(int(n % b))
         n //= b
     return digits[::-1]
+
+
+def chunker(seq, size):
+    return (seq[pos:pos + size] for pos in range(0, len(seq), size))
 
 if __name__ == "__main__":
     main()

@@ -12,7 +12,7 @@
 \markup \vspace #1   % Space Between Title and first staff
 
 notes = \relative c' {
-  \time 2/4
+  \time 4/4
   \fixed c''
   {
     \clef treble
