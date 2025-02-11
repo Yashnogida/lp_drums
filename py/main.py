@@ -1,85 +1,61 @@
 import sys
-import string
+import importlib
 
-
-note_sym = {
-  0 : "c8  ",
-  1 : "c8->",
-  2 : "f,8 ",
-}
-
-notes_per_measure = 12
-
-# note_sym_inv = {val: key for key, val in note_sym.items()} 
+rule_path = "rules"
 
 def main():
-  
-  if (len(sys.argv) < 2):  # default file name
-    title = "main"
-  else:
+
+  try:
     title = sys.argv[1]
     title = title.replace('_', ' ').title()
+    rule_file = importlib.import_module(f"{rule_path}.{sys.argv[1]}")
   
+  except IndexError:
+    print("\nNeed rule filename\n")
+    exit()
+     
+  except ModuleNotFoundError:
+    print(f"\n Can't find rule file: {rule_path}/{sys.argv[1]}.py\n")
+    exit()
+
   with open("ly/title.ly", "w") as file:
-    file.write(fr'title = "{title}"')
+    file.write(f'title = "{title}"\n')
     file.write(f'instrument = "{title}"\n')
-
-  note_array = []
-
-  f = open("ly/notes.ly", "w")
-
-  for i in range (pow(len(note_sym), notes_per_measure)):
     
-    note_array = convert_base(i, len(note_sym))
-    
-    while(len(note_array) < notes_per_measure):
-        note_array.insert(0, 0)
-    
-    if (rule(note_array, notes_per_measure)):
-        continue
-
-    note_array = [note_sym[x] for x in note_array]
-
-    
-    # Deal with Triplets
-    if ((notes_per_measure % 3) == 0):
-        for chunk in chunker(note_array, 3):
-          ly_string = rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
-          f.write(ly_string)
-    else:
-      f.write(' '.join(note_array))
-    
-    f.write('\n')
-    
-  f.close()
 
 
-def rule(note_array, arr_length):
+  with open("ly/time.ly", "w") as file:
+    file.write(rf'\time {rule_file.time_signature}')
 
-  for note in range(arr_length):
+  with open("ly/notes.ly", "w") as file:
 
-    na_n2 = note_array[-2 + note]
-    na_n1 = note_array[-1 + note]
-    na_0 = note_array[note]
+    note_array = []
 
-  # Checks that a note occurs a maximum of twice consecutively
-    if (na_n1 == na_0 == 0):
-        return True
+    for i in range (pow(len(rule_file.note_sym), rule_file.notes_per_measure)):
       
-  # Checks that a note occurs a maximum of twice consecutively
-    if (na_n1 == na_0 == 1):
-        return True
+      note_array = convert_base(i, len(rule_file.note_sym))
+      
+      while(len(note_array) < rule_file.notes_per_measure):
+          note_array.insert(0, 0)
+      
+      if (rule_file.rule(note_array, rule_file.notes_per_measure)):
+          continue
 
-  # Checks that a note occurs a maximum of twice consecutively
-    if (na_n2 == na_n1 == na_0 == 2):
-        return True
+      note_array = [rule_file.note_sym[x] for x in note_array]
 
-  # Checks that a note occurs a maximum of twice consecutively
-    if (((na_n2 == 0) or ((na_n2 == 1))) and ((na_n1 == 0) or ((na_n1 == 1))) and (na_0 != 2)):
-        return True
+      # Deal with Triplets
+      if ((rule_file.notes_per_measure % 3) == 0):
+          for chunk in chunker(note_array, 3):
+            ly_string = rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
+            file.write(ly_string)
+      else:
+        file.write(' '.join(note_array))
 
-  return False
+      file.write('\n')   
 
+    file.close()   
+  
+  
 
 def convert_base(n, b):
     if n == 0:

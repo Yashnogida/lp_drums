@@ -12,7 +12,7 @@
 \markup \vspace #1   % Space Between Title and first staff
 
 notes = \relative c' {
-  \time 4/4
+  \include "time.ly"
   \fixed c''
   {
     \clef treble

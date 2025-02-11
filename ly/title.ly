@@ -1,1 +1,2 @@
-title = "Triplet Snare-Kick Doubles"instrument = "Triplet Snare-Kick Doubles"
+title = "Snare Accent 8-Th Note Triplets"
+instrument = "Snare Accent 8-Th Note Triplets"
