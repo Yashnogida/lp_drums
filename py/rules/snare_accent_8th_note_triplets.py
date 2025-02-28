@@ -8,6 +8,9 @@ note_sym = {
   1 : "c8->",
 }
 
-def rule(note_array, arr_length):   
+def pre_rule(note_array, arr_length):   
   return False
+
+def post_rule(note_text):
+  return note_text
 

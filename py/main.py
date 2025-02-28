@@ -30,28 +30,34 @@ def main():
   with open("ly/notes.ly", "w") as file:
 
     note_array = []
+    note_text = []
 
     for i in range (pow(len(rule_file.note_sym), rule_file.notes_per_measure)):
       
       note_array = convert_base(i, len(rule_file.note_sym))
       
       while(len(note_array) < rule_file.notes_per_measure):
-          note_array.insert(0, 0)
+        note_array.insert(0, 0)
       
-      if (rule_file.rule(note_array, rule_file.notes_per_measure)):
-          continue
+      if (rule_file.pre_rule(note_array, rule_file.notes_per_measure)):
+        continue
 
       note_array = [rule_file.note_sym[x] for x in note_array]
 
       # Deal with Triplets
       if ((rule_file.notes_per_measure % 3) == 0):
-          for chunk in chunker(note_array, 3):
-            ly_string = rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
-            file.write(ly_string)
+        for chunk in chunker(note_array, 3):
+          ly_string = rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
+          note_text.append(ly_string)
       else:
-        file.write(' '.join(note_array))
+        note_text.append(' '.join(note_array))
 
-      file.write('\n')   
+
+    note_text = rule_file.post_rule(note_text)
+
+    for line in note_text:
+      file.write(line)
+      file.write("\n")
 
     file.close()   
   
