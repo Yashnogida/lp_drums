@@ -22,59 +22,30 @@ def main():
     file.write(f'title = "{title}"\n')
     file.write(f'instrument = "{title}"\n')
     
-
-
   with open("ly/time.ly", "w") as file:
     file.write(rf'\time {rule_file.time_signature}')
 
   with open("ly/notes.ly", "w") as file:
+    
+    note_data = rule_file.generate()
 
-    note_array = []
-    note_text = []
+    for note_array in note_data:
 
-    for i in range (pow(len(rule_file.note_sym), rule_file.notes_per_measure)):
-      
-      note_array = convert_base(i, len(rule_file.note_sym))
-      
-      while(len(note_array) < rule_file.notes_per_measure):
-        note_array.insert(0, 0)
-      
-      if (rule_file.pre_rule(note_array, rule_file.notes_per_measure)):
-        continue
-
-      note_array = [rule_file.note_sym[x] for x in note_array]
-
-      # Deal with Triplets
+      # Deal with Triplets. TODO: Generalize it to Prime
       if ((rule_file.notes_per_measure % 3) == 0):
         for chunk in chunker(note_array, 3):
-          ly_string = rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
-          note_text.append(ly_string)
+          tuple_string = rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
+          file.write(''.join(tuple_string))
+
       else:
-        note_text.append(' '.join(note_array))
-
-
-    note_text = rule_file.post_rule(note_text)
-
-    for line in note_text:
-      file.write(line)
+        file.write(' '.join(note_array))
       file.write("\n")
 
     file.close()   
 
   # Run Lilypond
   subprocess.check_call(f"lilypond -o pdf/{sys.argv[1]} ly/main.ly", shell=True, stdout=sys.stdout, stderr=subprocess.STDOUT)
-
   
-
-def convert_base(n, b):
-    if n == 0:
-        return [0]
-    digits = []
-    while n:
-        digits.append(int(n % b))
-        n //= b
-    return digits[::-1]
-
 
 def chunker(seq, size):
     return (seq[pos:pos + size] for pos in range(0, len(seq), size))

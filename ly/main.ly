@@ -11,18 +11,9 @@
 
 \markup \vspace #1   % Space Between Title and first staff
 
-notes = \relative c' {
+\drums { 
   \include "time.ly"
-  \fixed c''
-  {
-    \clef treble
-    \include "notes.ly"
-  }
-}
-
-
-\new Staff{ 
-    \notes 
+  \include "notes.ly"
 }
 
 

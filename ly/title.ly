@@ -1,2 +1,2 @@
-title = "Snare Accent 8Th Note Triplets"
-instrument = "Snare Accent 8Th Note Triplets"
+title = " Hihatt 16Th Note Pedal Patterns #1"
+instrument = " Hihatt 16Th Note Pedal Patterns #1"

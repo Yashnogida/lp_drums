@@ -1,128 +1,18 @@
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8   c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8   c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8   c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8   c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8  } 
-\tuplet 3/2 {c8-> c8-> c8->} 
-\tuplet 3/2 {c8-> c8-> c8->} 
+hho8  hhp16 hho8  hhp16 hhp16 hhc16
+hho8  hhp16 hhc16 hho8  hhp16 hhc16
+hho8  hhp16 hhc16 hho8  hhp16 hhp16
+hho8  hhp16 hhp16 hho8  hhp16 hhc16
+hho8  hhp16 hhp16 hho8  hhp16 hhp16
+hho8  hhp16 hhp16 hhc16 hho8  hhp16
+hhc16 hho8  hhp16 hho8  hhp16 hhp16
+hhc16 hho8  hhp16 hhc16 hho8  hhp16
+hhc16 hho8  hhp16 hhp16 hho8  hhp16
+hhp16 hho8  hhp16 hhc16 hho8  hhp16
+hhp16 hho8  hhp16 hhp16 hho8  hhp16
+hhp16 hho8  hhp16 hhp16 hhc16 hho8 
+hhp16 hhc16 hho8  hhp16 hho8  hhp16
+hhp16 hhc16 hho8  hhp16 hhc16 hho8 
+hhp16 hhc16 hho8  hhp16 hhp16 hho8 
+hhp16 hhp16 hho8  hhp16 hhc16 hho8 
+hhp16 hhp16 hho8  hhp16 hhp16 hho8 
+hhp16 hhp16 hhc16 hho8  hhp16 hho8 
