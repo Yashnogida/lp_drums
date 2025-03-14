@@ -8,7 +8,7 @@ import itertools
 time_signature = "2/4"
 
 note_sym = {
-  0 : "hho8 ",  # Open Hihatt
+  0 : "hho16",  # Open Hihatt
   1 : "hhc16",  # Closed Hihatt
   2 : "hhp16",  # Hihatt Pedal
 }
@@ -54,8 +54,8 @@ def pre_rule(note_array):
     na_n1 = note_array[-1 + note]
     na_0 = note_array[note]
 
-    # No more than two Open next to eachother
-    if (na_n2 == na_n1 == na_0 == 0):
+    # No more than one Open next to eachother
+    if (na_n1 == na_0 == 0):
         return False
     
     # No more than two Closed next to eachother

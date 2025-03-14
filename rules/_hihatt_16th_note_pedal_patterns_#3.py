@@ -8,9 +8,10 @@ import itertools
 time_signature = "2/4"
 
 note_sym = {
-  0 : "hho8 ",  # Open Hihatt
-  1 : "hhc16",  # Closed Hihatt
-  2 : "hhp16",  # Hihatt Pedal
+  0 : "hho8 ",  # Open Hihatt 8
+  1 : "hho16",  # Open Hihatt 16
+  2 : "hhc16",  # Closed Hihatt
+  3 : "hhp16",  # Hihatt Pedal
 }
 
 notes_per_measure = 8
@@ -54,20 +55,24 @@ def pre_rule(note_array):
     na_n1 = note_array[-1 + note]
     na_0 = note_array[note]
 
-    # No more than two Open next to eachother
+    # No more than two Open8 next to eachother
     if (na_n2 == na_n1 == na_0 == 0):
         return False
     
-    # No more than two Closed next to eachother
+    # No more than two Open16 next to eachother
     if (na_n2 == na_n1 == na_0 == 1):
         return False
   
+    # No more than two Closed next to eachother 
+    if (na_n2 == na_n1 == na_0 == 2):
+        return False
+    
     # No more than two Pedals next to eachother 
     if (na_n2 == na_n1 == na_0 == 2):
         return False
     
-    # Two Closed must be followed by an Open 
-    if ((na_n2 == 1) and (na_n1 == 1) and (na_0 != 0)):  
+    # Two Closed must be followed by an Open8 or an Open16
+    if (((na_n2 == 2) and (na_n1 == 2) and (na_0 != 0)) or ((na_n2 == 2) and (na_n1 == 2) and (na_0 != 1))):  
         return False
 
     # A Pedal followed by a Closed must be followed by an Open 
