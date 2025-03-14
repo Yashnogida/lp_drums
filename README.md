@@ -1,6 +1,11 @@
 # lp_drums
+
 Generating Drum Permutations Sheet Music with Lilypond
 
-This is expecting the lilypond executable to be a path variable. To create a sheet of music, edit the a.py file to create the note symbols (drums to permutate) and rules for permutations. 
+This is expecting the lilypond executable to be a path variable. To create a sheet of music, create or edit a rulefile (Python file in the "rules" directory). In the rulefile, indicate the time signature, notes per measure, not symbol, and any filtering in pre_rule and post_rule functions. 
 
-Run "build.bat (filename)" where "filename" is the name of the sheet music pdf that will be put in the "pdf" directory. This script will create temp.ly files and run lilypond on the a.ly file (which includes this file) to create the pdf.
+To make a PDF from the rulefile, run the main.py python script with the name of the rule like:
+
+`python3 main.py [rulefile]`
+
+PDF will be output in the "pdf" directory.
