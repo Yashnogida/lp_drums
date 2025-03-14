@@ -1,6 +1,6 @@
 import sys
 import importlib
-
+import subprocess
 rule_path = "rules"
 
 def main():
@@ -60,7 +60,10 @@ def main():
       file.write("\n")
 
     file.close()   
-  
+
+  # Run Lilypond
+  subprocess.check_call(f"lilypond -o pdf/{sys.argv[1]} ly/main.ly", shell=True, stdout=sys.stdout, stderr=subprocess.STDOUT)
+
   
 
 def convert_base(n, b):

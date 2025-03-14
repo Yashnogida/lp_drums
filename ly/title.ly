@@ -1,2 +1,2 @@
-title = "Random Four 16Th Note Snare Accents"
-instrument = "Random Four 16Th Note Snare Accents"
+title = "Snare Accent 8Th Note Triplets"
+instrument = "Snare Accent 8Th Note Triplets"

@@ -5,8 +5,7 @@ notes_per_measure = 8
 
 note_sym = {
   0 : "<f4>",
-  1 : "<f4 f,4>",
-  1 : "<f4 c4>",
+  1 : "<f,4>",
 }
 
 def pre_rule(note_array, arr_length):   
