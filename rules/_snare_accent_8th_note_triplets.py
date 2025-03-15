@@ -4,7 +4,7 @@ time_signature = "2/4"
 notes_per_measure = 6
 
 note_sym = {
-  0 : "sn8  ",
+  0 : "sn8",
   1 : "sn8->",
 }
 

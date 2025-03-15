@@ -31,6 +31,10 @@ def main():
 
     for note_array in note_data:
 
+      # Make the note entries evenly spaced based on the widest note string
+      max_str_len = len(max(note_array, key=len))
+      note_array = [x + " " * (max_str_len - len(x)) for x in note_array]
+
       # Deal with Triplets. TODO: Generalize it to Prime
       if ((rule_file.notes_per_measure % 3) == 0):
         for chunk in chunker(note_array, 3):

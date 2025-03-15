@@ -1,10 +1,12 @@
+# For List of note symbols:
+# https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
 
 time_signature = "2/4"
 
 notes_per_measure = 8
 
 note_sym = {
-  0 : "sn16  ",
+  0 : "sn16",
   1 : "sn16->",
 }
 
