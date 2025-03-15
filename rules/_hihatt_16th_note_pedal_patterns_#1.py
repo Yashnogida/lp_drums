@@ -30,7 +30,7 @@ def generate():
       while(len(note_array) < i):
         note_array.insert(0, 0)
     
-      if (pre_rule(note_array)):
+      if (rule(note_array)):
         note_array = [note_sym[x] for x in note_array]
         note_data.append(note_array)
   
@@ -39,7 +39,7 @@ def generate():
 
 
 
-def pre_rule(note_array):   
+def rule(note_array):   
 
   note_array = [note_sym[x] for x in note_array]
 
@@ -67,14 +67,6 @@ def pre_rule(note_array):
     # Maximum of two Pedals next to eachother 
     if (na_n2 == na_n1 == na_0 == "hhp16"):
         return False
-    
-    # Two Closed must be followed by an Open 
-    if ((na_n2 == "hhc16") and (na_n1 == "hhc16") and (na_0 != "hho8")):  
-        return False
-
-    # A Pedal followed by a Closed must be followed by an Open 
-    if ((na_n2 == "hhp16") and (na_n1 == "hhc16") and (na_0 != "hho8")):  
-        return False
 
     # Closed must NOT be followed by a Pedal
     if ((na_n1 == "hhc16") and (na_0 == "hhp16")):  
@@ -82,6 +74,14 @@ def pre_rule(note_array):
 
     # Open must NOT be followed by a Closed
     if ((na_n1 == "hho8") and (na_0 == "hhc16")):
+        return False
+
+    # Two Closed must be followed by an Open 
+    if ((na_n2 == "hhc16") and (na_n1 == "hhc16") and (na_0 != "hho8")):  
+        return False
+
+    # A Pedal followed by a Closed must be followed by an Open 
+    if ((na_n2 == "hhp16") and (na_n1 == "hhc16") and (na_0 != "hho8")):  
         return False
 
     # print(f"{note_array} : {note_length} : {sum(note_length)}")

@@ -1,2 +1,2 @@
-title = " Snare Accent 8Th Note Triplets"
-instrument = " Snare Accent 8Th Note Triplets"
+title = " Snare-Kick Left Hand Patterns"
+instrument = " Snare-Kick Left Hand Patterns"

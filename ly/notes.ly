@@ -1,64 +1,54 @@
-\tuplet 3/2 {sn8 sn8 sn8} \tuplet 3/2 {sn8 sn8 sn8} 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
+sn16^"L" sn16^"L" bd16     bd16    
+sn16^"L" sn16^"L" bd16     r16     
+sn16^"L" sn16^"L" r16      bd16    
+sn16^"L" sn16^"L" r16      r16     
+sn16^"L" bd16     sn16^"L" bd16    
+sn16^"L" bd16     sn16^"L" r16     
+sn16^"L" bd16     bd16     sn16^"L"
+sn16^"L" bd16     bd16     r16     
+sn16^"L" bd16     r16      sn16^"L"
+sn16^"L" bd16     r16      bd16    
+sn16^"L" bd16     r16      r16     
+sn16^"L" r16      sn16^"L" bd16    
+sn16^"L" r16      sn16^"L" r16     
+sn16^"L" r16      bd16     sn16^"L"
+sn16^"L" r16      bd16     bd16    
+sn16^"L" r16      bd16     r16     
+sn16^"L" r16      r16      sn16^"L"
+sn16^"L" r16      r16      bd16    
+bd16     sn16^"L" sn16^"L" bd16    
+bd16     sn16^"L" sn16^"L" r16     
+bd16     sn16^"L" bd16     sn16^"L"
+bd16     sn16^"L" bd16     r16     
+bd16     sn16^"L" r16      sn16^"L"
+bd16     sn16^"L" r16      bd16    
+bd16     sn16^"L" r16      r16     
+bd16     bd16     sn16^"L" sn16^"L"
+bd16     bd16     sn16^"L" r16     
+bd16     bd16     r16      sn16^"L"
+bd16 bd16 r16  r16 
+bd16     r16      sn16^"L" sn16^"L"
+bd16     r16      sn16^"L" bd16    
+bd16     r16      sn16^"L" r16     
+bd16     r16      bd16     sn16^"L"
+bd16 r16  bd16 r16 
+bd16     r16      r16      sn16^"L"
+bd16 r16  r16  bd16
+r16      sn16^"L" sn16^"L" bd16    
+r16      sn16^"L" sn16^"L" r16     
+r16      sn16^"L" bd16     sn16^"L"
+r16      sn16^"L" bd16     bd16    
+r16      sn16^"L" bd16     r16     
+r16      sn16^"L" r16      sn16^"L"
+r16      sn16^"L" r16      bd16    
+r16      bd16     sn16^"L" sn16^"L"
+r16      bd16     sn16^"L" bd16    
+r16      bd16     sn16^"L" r16     
+r16      bd16     bd16     sn16^"L"
+r16  bd16 bd16 r16 
+r16      bd16     r16      sn16^"L"
+r16  bd16 r16  bd16
+r16      r16      sn16^"L" sn16^"L"
+r16      r16      sn16^"L" bd16    
+r16      r16      bd16     sn16^"L"
+r16  r16  bd16 bd16
