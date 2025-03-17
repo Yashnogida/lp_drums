@@ -26,6 +26,10 @@ def generate():
   return note_data
 
 
+def format(note_array):
+   return ' '.join(note_array)
+
+
 
 def convert_base(n, b):
     if n == 0:

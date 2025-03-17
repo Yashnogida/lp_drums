@@ -53,6 +53,10 @@ def rule(note_array):
   return True
 
 
+def format(note_array):
+   return ' '.join(note_array)
+
+
 def convert_base(n, b):
     if n == 0:
         return [0]

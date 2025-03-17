@@ -6,6 +6,7 @@ except this includes 8th note open hihatts in addition to
 
 import re
 import itertools
+from collections import deque
 
 # For List of note symbols:
 # https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
@@ -98,6 +99,29 @@ def pre_rule(note_array):
 
   return True
 
+
+def format(note_array):
+  
+  if "hho16" not in note_array:
+    note_array.insert(0, r'\staffHighlight "palegreen"')
+    note_array.append(r'\stopStaffHighlight')
+  print(note_array)
+
+  if "hho8 " not in note_array:
+    note_array.insert(0, r'\staffHighlight "lightpink"')
+    note_array.append(r'\stopStaffHighlight')
+  print(note_array)
+
+  if ("hho8 " in note_array) and ("hho16" in note_array):
+    note_array.insert(0, r'\staffHighlight "lightsteelblue"')
+    note_array.append(r'\stopStaffHighlight')
+  print(note_array)
+  
+  
+
+  return ' '.join(note_array)
+
+    
 
 
 
