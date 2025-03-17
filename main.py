@@ -32,7 +32,8 @@ def main():
     for note_array in note_data:
 
       # Make the note entries evenly spaced based on the widest note string
-      max_str_len = len(max(note_array, key=len))
+      # max_str_len = len(max(note_array, key=len))
+      max_str_len = max(len(value) for value in rule_file.note_sym.values())
       note_array = [x + " " * (max_str_len - len(x)) for x in note_array]
 
       # Deal with Triplets. TODO: Generalize it to Prime
@@ -48,7 +49,10 @@ def main():
     file.close()   
 
   # Run Lilypond
-  subprocess.check_call(f"lilypond -o pdf/{sys.argv[1]} ly/main.ly", shell=True, stdout=sys.stdout, stderr=subprocess.STDOUT)
+  try:
+    subprocess.check_call(f"lilypond -o pdf/{sys.argv[1]} ly/main.ly", shell=True, stdout=sys.stdout, stderr=subprocess.STDOUT)
+  except subprocess.CalledProcessError:
+    print('Calling "lilypond" failed. Is it installed?')
   
 
 def chunker(seq, size):
