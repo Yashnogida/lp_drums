@@ -28,9 +28,17 @@ def generate():
   return note_data
 
 
-def format(note_array):
-   return ' '.join(note_array)
+def format(note_data):
+  
+  note_data_formatted = []
+  max_str_len = max(len(value) for value in note_sym.values())
+  
+  for note_array in note_data:
+    note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
 
+  note_data_formatted = [("".join(x) + '\n') for x in note_data_formatted] 
+  
+  return note_data_formatted
 
 
 def convert_base(n, b):

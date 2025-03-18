@@ -1,1 +1,0 @@
-<< /OutputFile (./lilypond-tmp-4184282.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (./lilypond-tmp-4184282) (r) file  run

@@ -13,36 +13,52 @@ import itertools
 time_signature = "1/4"
 
 note_sym = {
-  0 : 'sn16^"L"',
-  1 : "bd16",
-  # 2 : "r16",
+  0 : 'sn8^"L"',
+  1 : 'sn8->^"L"',
+  2 : 'sn16^"L"',
+  3 : 'sn16->^"L"',
+  4 : "bd8",
+  5 : "bd16",
 }
 
 
-notes_per_measure = 6
+notes_per_measure = 4
 
 def generate():
   
   note_array = []
   note_data = []
   
-  for i in range (pow(len(note_sym), notes_per_measure)):
-  
-    note_array = convert_base(i, len(note_sym))
-  
-    while(len(note_array) < notes_per_measure):
-      note_array.insert(0, 0)
+  # 2 Because it's the worse case scenario (four 8th notes)
+  for i in range(2, notes_per_measure + 1):
+    for j in range(pow(len(note_sym), i)):
 
-    note_array = [note_sym[x] for x in note_array]
+      note_array = convert_base(j, len(note_sym))
+
+      while(len(note_array) < i):
+        note_array.insert(0, 0)
     
-    if (rule(note_array)):
-      note_data.append(note_array)
+      note_array = [note_sym[x] for x in note_array]
+    
+      if (rule(note_array)):
+        note_data.append(note_array)
+  
   
   return note_data
 
 
 
 def rule(note_array):   
+
+  # Divide 16 (the smallest rhythmic subdivision) by each note rhythmic value
+  # And check to see that they add up to the measure length (notes_per_measure)
+  note_length = [re.sub('[^0-9]','',x) for x in note_array]  # Strip non-numeric characters
+  note_length = [16 / int(length) for length in note_length]
+
+  # print(f"{note_array} : {note_length} : {sum(note_length)}")
+
+  if sum(note_length) != notes_per_measure:
+    return False
   
   for note in range(len(note_array)):  
 
@@ -51,11 +67,11 @@ def rule(note_array):
     na_0 = note_array[note]
     
     # No more than two snares next to eachother
-    if (na_n2 == na_n1 == na_0 == 'sn16^"L"'):
+    if (("sn" in na_n2) and ("sn" in na_n1) and ("sn" in na_0)): 
         return False
     
-    # No more than two kicks next to eachother 
-    if (na_n2 == na_n1 == na_0 == "bd16"):
+    # No more than two kicks next to eachother
+    if (("bd" in na_n2) and ("bd" in na_n1) and ("bd" in na_0)):
         return False
 
     # # No more than two rests next to eachother 
@@ -63,6 +79,7 @@ def rule(note_array):
     #     return False
 
   return True
+
 
 
 def format(note_data):
