@@ -10,19 +10,19 @@ import itertools
 # For List of note symbols:
 # https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
 
-time_signature = "1/4"
+time_signature = "2/4"
 
 note_sym = {
   0 : 'sn8^"L"',
-  1 : 'sn8->^"L"',
-  2 : 'sn16^"L"',
-  3 : 'sn16->^"L"',
-  4 : "bd8",
-  5 : "bd16",
+  1 : 'sn16^"L"',
+  2 : "bd8",
+  3 : "bd16",
+  # 1 : 'sn8->^"L"',
+  # 3 : 'sn16->^"L"',
 }
 
 
-notes_per_measure = 4
+notes_per_measure = 8
 
 def generate():
   
