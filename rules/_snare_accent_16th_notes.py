@@ -34,6 +34,24 @@ def format(note_data):
   max_str_len = max(len(value) for value in note_sym.values())
   
   for note_array in note_data:
+    
+    highlight = True
+
+    for note in range(len(note_array)):
+      
+      na_n2 = note_array[-2 + note]
+      na_n1 = note_array[-1 + note]
+      na_0 = note_array[note]
+      
+      if (("->" in na_n1) and ("->" in na_0)) or \
+      ((na_n2 == "sn16") and (na_n1 == "sn16") and (na_0 == "sn16")):
+        highlight = False
+
+    if (highlight):
+      note_array.insert(0, r'^"Moeller Ride Beat"')
+      note_array.insert(0, r'\staffHighlight "yellow"')
+      note_array.append(r'\stopStaffHighlight')
+    
     note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
 
   note_data_formatted = [("".join(x) + '\n') for x in note_data_formatted] 
