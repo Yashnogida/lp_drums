@@ -48,7 +48,7 @@ def format(note_data):
         highlight = False
 
     if (highlight):
-      note_array.insert(0, r'^"Moeller Ride Beat"')
+      note_array.insert(1, r'^"Moeller Ride Beat"')
       note_array.insert(0, r'\staffHighlight "yellow"')
       note_array.append(r'\stopStaffHighlight')
     
