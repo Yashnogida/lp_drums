@@ -4,11 +4,6 @@ import subprocess
 
 rule_path = "rules"
 
-#  TODO:
-#  - Superscript "th" for titles
-#  - implement post rule and post-rule exception
-#  - implement prime-number tuplet generalization
-
 
 def main():
 
@@ -58,7 +53,7 @@ def title_create(title):
     
     if (digit_started and (last_char == 't') and (char == 'h')):
       title_string = title_string[:-(1+len(number))]
-      title_string += f" \concat{{{number} \super th }} "
+      title_string += f"\concat{{{number} \super th}} "
       digit_started = False
       number = ""
 
@@ -76,9 +71,6 @@ def title_create(title):
   with open("ly/title.ly", "w") as file:
     file.write(f'title = \markup {{{title_string}}}\n')
     file.write(f'instrument = \markup {{{title_string}}}\n')
-
-  # title = \markup {Snare-Kick 8\super th -16\super th Note Left Hand Patterns}
-  # instrument = \markup {Snare-Kick 8 \super th -16 \super th Note Left Hand Patterns}
   
   return title_string
 
