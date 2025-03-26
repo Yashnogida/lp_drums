@@ -59,13 +59,20 @@ def format(note_data):
   max_str_len = max(len(value) for value in note_sym.values())
   
   for note_array in note_data:
-    note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
+    tuple_string = ""
+    note_array_formatted = [x + " " * (max_str_len - len(x)) for x in note_array]
+    for chunk in chunker(note_array_formatted, 3):
+      tuple_string += rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
+    note_data_formatted.append(f"{tuple_string}\n")
+  # note_data_formatted = [("".join(x) + '\n') for x in note_data_formatted] 
+  
 
-  note_data_formatted = [("".join(x) + '\n') for x in note_data_formatted] 
   
   return note_data_formatted
 
 
+def chunker(seq, size):
+    return (seq[pos:pos + size] for pos in range(0, len(seq), size))
 
 def convert_base(n, b):
     if n == 0:

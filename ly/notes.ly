@@ -1,256 +1,172 @@
-sn16  sn16  sn16  sn16  sn16  sn16  sn16  sn16  
-sn16  sn16  sn16  sn16  sn16  sn16  sn16  sn16->
-sn16  sn16  sn16  sn16  sn16  sn16  sn16->sn16  
-sn16  sn16  sn16  sn16  sn16  sn16  sn16->sn16->
-sn16  sn16  sn16  sn16  sn16  sn16->sn16  sn16  
-sn16  sn16  sn16  sn16  sn16  sn16->sn16  sn16->
-sn16  sn16  sn16  sn16  sn16  sn16->sn16->sn16  
-sn16  sn16  sn16  sn16  sn16  sn16->sn16->sn16->
-sn16  sn16  sn16  sn16  sn16->sn16  sn16  sn16  
-sn16  sn16  sn16  sn16  sn16->sn16  sn16  sn16->
-sn16  sn16  sn16  sn16  sn16->sn16  sn16->sn16  
-sn16  sn16  sn16  sn16  sn16->sn16  sn16->sn16->
-sn16  sn16  sn16  sn16  sn16->sn16->sn16  sn16  
-sn16  sn16  sn16  sn16  sn16->sn16->sn16  sn16->
-sn16  sn16  sn16  sn16  sn16->sn16->sn16->sn16  
-sn16  sn16  sn16  sn16  sn16->sn16->sn16->sn16->
-sn16  sn16  sn16  sn16->sn16  sn16  sn16  sn16  
-sn16  sn16  sn16  sn16->sn16  sn16  sn16  sn16->
-sn16  sn16  sn16  sn16->sn16  sn16  sn16->sn16  
-sn16  sn16  sn16  sn16->sn16  sn16  sn16->sn16->
-sn16  sn16  sn16  sn16->sn16  sn16->sn16  sn16  
-sn16  sn16  sn16  sn16->sn16  sn16->sn16  sn16->
-sn16  sn16  sn16  sn16->sn16  sn16->sn16->sn16  
-sn16  sn16  sn16  sn16->sn16  sn16->sn16->sn16->
-sn16  sn16  sn16  sn16->sn16->sn16  sn16  sn16  
-sn16  sn16  sn16  sn16->sn16->sn16  sn16  sn16->
-sn16  sn16  sn16  sn16->sn16->sn16  sn16->sn16  
-sn16  sn16  sn16  sn16->sn16->sn16  sn16->sn16->
-sn16  sn16  sn16  sn16->sn16->sn16->sn16  sn16  
-sn16  sn16  sn16  sn16->sn16->sn16->sn16  sn16->
-sn16  sn16  sn16  sn16->sn16->sn16->sn16->sn16  
-sn16  sn16  sn16  sn16->sn16->sn16->sn16->sn16->
-sn16  sn16  sn16->sn16  sn16  sn16  sn16  sn16  
-sn16  sn16  sn16->sn16  sn16  sn16  sn16  sn16->
-sn16  sn16  sn16->sn16  sn16  sn16  sn16->sn16  
-sn16  sn16  sn16->sn16  sn16  sn16  sn16->sn16->
-sn16  sn16  sn16->sn16  sn16  sn16->sn16  sn16  
-\staffHighlight "yellow"sn16  ^"Moeller Ride Beat"sn16  sn16->sn16  sn16  sn16->sn16  sn16->\stopStaffHighlight
-sn16  sn16  sn16->sn16  sn16  sn16->sn16->sn16  
-sn16  sn16  sn16->sn16  sn16  sn16->sn16->sn16->
-sn16  sn16  sn16->sn16  sn16->sn16  sn16  sn16  
-\staffHighlight "yellow"sn16  ^"Moeller Ride Beat"sn16  sn16->sn16  sn16->sn16  sn16  sn16->\stopStaffHighlight
-sn16  sn16  sn16->sn16  sn16->sn16  sn16->sn16  
-sn16  sn16  sn16->sn16  sn16->sn16  sn16->sn16->
-sn16  sn16  sn16->sn16  sn16->sn16->sn16  sn16  
-sn16  sn16  sn16->sn16  sn16->sn16->sn16  sn16->
-sn16  sn16  sn16->sn16  sn16->sn16->sn16->sn16  
-sn16  sn16  sn16->sn16  sn16->sn16->sn16->sn16->
-sn16  sn16  sn16->sn16->sn16  sn16  sn16  sn16  
-sn16  sn16  sn16->sn16->sn16  sn16  sn16  sn16->
-sn16  sn16  sn16->sn16->sn16  sn16  sn16->sn16  
-sn16  sn16  sn16->sn16->sn16  sn16  sn16->sn16->
-sn16  sn16  sn16->sn16->sn16  sn16->sn16  sn16  
-sn16  sn16  sn16->sn16->sn16  sn16->sn16  sn16->
-sn16  sn16  sn16->sn16->sn16  sn16->sn16->sn16  
-sn16  sn16  sn16->sn16->sn16  sn16->sn16->sn16->
-sn16  sn16  sn16->sn16->sn16->sn16  sn16  sn16  
-sn16  sn16  sn16->sn16->sn16->sn16  sn16  sn16->
-sn16  sn16  sn16->sn16->sn16->sn16  sn16->sn16  
-sn16  sn16  sn16->sn16->sn16->sn16  sn16->sn16->
-sn16  sn16  sn16->sn16->sn16->sn16->sn16  sn16  
-sn16  sn16  sn16->sn16->sn16->sn16->sn16  sn16->
-sn16  sn16  sn16->sn16->sn16->sn16->sn16->sn16  
-sn16  sn16  sn16->sn16->sn16->sn16->sn16->sn16->
-sn16  sn16->sn16  sn16  sn16  sn16  sn16  sn16  
-sn16  sn16->sn16  sn16  sn16  sn16  sn16  sn16->
-sn16  sn16->sn16  sn16  sn16  sn16  sn16->sn16  
-sn16  sn16->sn16  sn16  sn16  sn16  sn16->sn16->
-sn16  sn16->sn16  sn16  sn16  sn16->sn16  sn16  
-sn16  sn16->sn16  sn16  sn16  sn16->sn16  sn16->
-sn16  sn16->sn16  sn16  sn16  sn16->sn16->sn16  
-sn16  sn16->sn16  sn16  sn16  sn16->sn16->sn16->
-sn16  sn16->sn16  sn16  sn16->sn16  sn16  sn16  
-\staffHighlight "yellow"sn16  ^"Moeller Ride Beat"sn16->sn16  sn16  sn16->sn16  sn16  sn16->\stopStaffHighlight
-\staffHighlight "yellow"sn16  ^"Moeller Ride Beat"sn16->sn16  sn16  sn16->sn16  sn16->sn16  \stopStaffHighlight
-sn16  sn16->sn16  sn16  sn16->sn16  sn16->sn16->
-sn16  sn16->sn16  sn16  sn16->sn16->sn16  sn16  
-sn16  sn16->sn16  sn16  sn16->sn16->sn16  sn16->
-sn16  sn16->sn16  sn16  sn16->sn16->sn16->sn16  
-sn16  sn16->sn16  sn16  sn16->sn16->sn16->sn16->
-sn16  sn16->sn16  sn16->sn16  sn16  sn16  sn16  
-sn16  sn16->sn16  sn16->sn16  sn16  sn16  sn16->
-\staffHighlight "yellow"sn16  ^"Moeller Ride Beat"sn16->sn16  sn16->sn16  sn16  sn16->sn16  \stopStaffHighlight
-sn16  sn16->sn16  sn16->sn16  sn16  sn16->sn16->
-sn16  sn16->sn16  sn16->sn16  sn16->sn16  sn16  
-\staffHighlight "yellow"sn16  ^"Moeller Ride Beat"sn16->sn16  sn16->sn16  sn16->sn16  sn16->\stopStaffHighlight
-sn16  sn16->sn16  sn16->sn16  sn16->sn16->sn16  
-sn16  sn16->sn16  sn16->sn16  sn16->sn16->sn16->
-sn16  sn16->sn16  sn16->sn16->sn16  sn16  sn16  
-sn16  sn16->sn16  sn16->sn16->sn16  sn16  sn16->
-sn16  sn16->sn16  sn16->sn16->sn16  sn16->sn16  
-sn16  sn16->sn16  sn16->sn16->sn16  sn16->sn16->
-sn16  sn16->sn16  sn16->sn16->sn16->sn16  sn16  
-sn16  sn16->sn16  sn16->sn16->sn16->sn16  sn16->
-sn16  sn16->sn16  sn16->sn16->sn16->sn16->sn16  
-sn16  sn16->sn16  sn16->sn16->sn16->sn16->sn16->
-sn16  sn16->sn16->sn16  sn16  sn16  sn16  sn16  
-sn16  sn16->sn16->sn16  sn16  sn16  sn16  sn16->
-sn16  sn16->sn16->sn16  sn16  sn16  sn16->sn16  
-sn16  sn16->sn16->sn16  sn16  sn16  sn16->sn16->
-sn16  sn16->sn16->sn16  sn16  sn16->sn16  sn16  
-sn16  sn16->sn16->sn16  sn16  sn16->sn16  sn16->
-sn16  sn16->sn16->sn16  sn16  sn16->sn16->sn16  
-sn16  sn16->sn16->sn16  sn16  sn16->sn16->sn16->
-sn16  sn16->sn16->sn16  sn16->sn16  sn16  sn16  
-sn16  sn16->sn16->sn16  sn16->sn16  sn16  sn16->
-sn16  sn16->sn16->sn16  sn16->sn16  sn16->sn16  
-sn16  sn16->sn16->sn16  sn16->sn16  sn16->sn16->
-sn16  sn16->sn16->sn16  sn16->sn16->sn16  sn16  
-sn16  sn16->sn16->sn16  sn16->sn16->sn16  sn16->
-sn16  sn16->sn16->sn16  sn16->sn16->sn16->sn16  
-sn16  sn16->sn16->sn16  sn16->sn16->sn16->sn16->
-sn16  sn16->sn16->sn16->sn16  sn16  sn16  sn16  
-sn16  sn16->sn16->sn16->sn16  sn16  sn16  sn16->
-sn16  sn16->sn16->sn16->sn16  sn16  sn16->sn16  
-sn16  sn16->sn16->sn16->sn16  sn16  sn16->sn16->
-sn16  sn16->sn16->sn16->sn16  sn16->sn16  sn16  
-sn16  sn16->sn16->sn16->sn16  sn16->sn16  sn16->
-sn16  sn16->sn16->sn16->sn16  sn16->sn16->sn16  
-sn16  sn16->sn16->sn16->sn16  sn16->sn16->sn16->
-sn16  sn16->sn16->sn16->sn16->sn16  sn16  sn16  
-sn16  sn16->sn16->sn16->sn16->sn16  sn16  sn16->
-sn16  sn16->sn16->sn16->sn16->sn16  sn16->sn16  
-sn16  sn16->sn16->sn16->sn16->sn16  sn16->sn16->
-sn16  sn16->sn16->sn16->sn16->sn16->sn16  sn16  
-sn16  sn16->sn16->sn16->sn16->sn16->sn16  sn16->
-sn16  sn16->sn16->sn16->sn16->sn16->sn16->sn16  
-sn16  sn16->sn16->sn16->sn16->sn16->sn16->sn16->
-sn16->sn16  sn16  sn16  sn16  sn16  sn16  sn16  
-sn16->sn16  sn16  sn16  sn16  sn16  sn16  sn16->
-sn16->sn16  sn16  sn16  sn16  sn16  sn16->sn16  
-sn16->sn16  sn16  sn16  sn16  sn16  sn16->sn16->
-sn16->sn16  sn16  sn16  sn16  sn16->sn16  sn16  
-sn16->sn16  sn16  sn16  sn16  sn16->sn16  sn16->
-sn16->sn16  sn16  sn16  sn16  sn16->sn16->sn16  
-sn16->sn16  sn16  sn16  sn16  sn16->sn16->sn16->
-sn16->sn16  sn16  sn16  sn16->sn16  sn16  sn16  
-sn16->sn16  sn16  sn16  sn16->sn16  sn16  sn16->
-sn16->sn16  sn16  sn16  sn16->sn16  sn16->sn16  
-sn16->sn16  sn16  sn16  sn16->sn16  sn16->sn16->
-sn16->sn16  sn16  sn16  sn16->sn16->sn16  sn16  
-sn16->sn16  sn16  sn16  sn16->sn16->sn16  sn16->
-sn16->sn16  sn16  sn16  sn16->sn16->sn16->sn16  
-sn16->sn16  sn16  sn16  sn16->sn16->sn16->sn16->
-sn16->sn16  sn16  sn16->sn16  sn16  sn16  sn16  
-sn16->sn16  sn16  sn16->sn16  sn16  sn16  sn16->
-\staffHighlight "yellow"sn16->^"Moeller Ride Beat"sn16  sn16  sn16->sn16  sn16  sn16->sn16  \stopStaffHighlight
-sn16->sn16  sn16  sn16->sn16  sn16  sn16->sn16->
-\staffHighlight "yellow"sn16->^"Moeller Ride Beat"sn16  sn16  sn16->sn16  sn16->sn16  sn16  \stopStaffHighlight
-sn16->sn16  sn16  sn16->sn16  sn16->sn16  sn16->
-sn16->sn16  sn16  sn16->sn16  sn16->sn16->sn16  
-sn16->sn16  sn16  sn16->sn16  sn16->sn16->sn16->
-sn16->sn16  sn16  sn16->sn16->sn16  sn16  sn16  
-sn16->sn16  sn16  sn16->sn16->sn16  sn16  sn16->
-sn16->sn16  sn16  sn16->sn16->sn16  sn16->sn16  
-sn16->sn16  sn16  sn16->sn16->sn16  sn16->sn16->
-sn16->sn16  sn16  sn16->sn16->sn16->sn16  sn16  
-sn16->sn16  sn16  sn16->sn16->sn16->sn16  sn16->
-sn16->sn16  sn16  sn16->sn16->sn16->sn16->sn16  
-sn16->sn16  sn16  sn16->sn16->sn16->sn16->sn16->
-sn16->sn16  sn16->sn16  sn16  sn16  sn16  sn16  
-sn16->sn16  sn16->sn16  sn16  sn16  sn16  sn16->
-sn16->sn16  sn16->sn16  sn16  sn16  sn16->sn16  
-sn16->sn16  sn16->sn16  sn16  sn16  sn16->sn16->
-\staffHighlight "yellow"sn16->^"Moeller Ride Beat"sn16  sn16->sn16  sn16  sn16->sn16  sn16  \stopStaffHighlight
-sn16->sn16  sn16->sn16  sn16  sn16->sn16  sn16->
-sn16->sn16  sn16->sn16  sn16  sn16->sn16->sn16  
-sn16->sn16  sn16->sn16  sn16  sn16->sn16->sn16->
-sn16->sn16  sn16->sn16  sn16->sn16  sn16  sn16  
-sn16->sn16  sn16->sn16  sn16->sn16  sn16  sn16->
-\staffHighlight "yellow"sn16->^"Moeller Ride Beat"sn16  sn16->sn16  sn16->sn16  sn16->sn16  \stopStaffHighlight
-sn16->sn16  sn16->sn16  sn16->sn16  sn16->sn16->
-sn16->sn16  sn16->sn16  sn16->sn16->sn16  sn16  
-sn16->sn16  sn16->sn16  sn16->sn16->sn16  sn16->
-sn16->sn16  sn16->sn16  sn16->sn16->sn16->sn16  
-sn16->sn16  sn16->sn16  sn16->sn16->sn16->sn16->
-sn16->sn16  sn16->sn16->sn16  sn16  sn16  sn16  
-sn16->sn16  sn16->sn16->sn16  sn16  sn16  sn16->
-sn16->sn16  sn16->sn16->sn16  sn16  sn16->sn16  
-sn16->sn16  sn16->sn16->sn16  sn16  sn16->sn16->
-sn16->sn16  sn16->sn16->sn16  sn16->sn16  sn16  
-sn16->sn16  sn16->sn16->sn16  sn16->sn16  sn16->
-sn16->sn16  sn16->sn16->sn16  sn16->sn16->sn16  
-sn16->sn16  sn16->sn16->sn16  sn16->sn16->sn16->
-sn16->sn16  sn16->sn16->sn16->sn16  sn16  sn16  
-sn16->sn16  sn16->sn16->sn16->sn16  sn16  sn16->
-sn16->sn16  sn16->sn16->sn16->sn16  sn16->sn16  
-sn16->sn16  sn16->sn16->sn16->sn16  sn16->sn16->
-sn16->sn16  sn16->sn16->sn16->sn16->sn16  sn16  
-sn16->sn16  sn16->sn16->sn16->sn16->sn16  sn16->
-sn16->sn16  sn16->sn16->sn16->sn16->sn16->sn16  
-sn16->sn16  sn16->sn16->sn16->sn16->sn16->sn16->
-sn16->sn16->sn16  sn16  sn16  sn16  sn16  sn16  
-sn16->sn16->sn16  sn16  sn16  sn16  sn16  sn16->
-sn16->sn16->sn16  sn16  sn16  sn16  sn16->sn16  
-sn16->sn16->sn16  sn16  sn16  sn16  sn16->sn16->
-sn16->sn16->sn16  sn16  sn16  sn16->sn16  sn16  
-sn16->sn16->sn16  sn16  sn16  sn16->sn16  sn16->
-sn16->sn16->sn16  sn16  sn16  sn16->sn16->sn16  
-sn16->sn16->sn16  sn16  sn16  sn16->sn16->sn16->
-sn16->sn16->sn16  sn16  sn16->sn16  sn16  sn16  
-sn16->sn16->sn16  sn16  sn16->sn16  sn16  sn16->
-sn16->sn16->sn16  sn16  sn16->sn16  sn16->sn16  
-sn16->sn16->sn16  sn16  sn16->sn16  sn16->sn16->
-sn16->sn16->sn16  sn16  sn16->sn16->sn16  sn16  
-sn16->sn16->sn16  sn16  sn16->sn16->sn16  sn16->
-sn16->sn16->sn16  sn16  sn16->sn16->sn16->sn16  
-sn16->sn16->sn16  sn16  sn16->sn16->sn16->sn16->
-sn16->sn16->sn16  sn16->sn16  sn16  sn16  sn16  
-sn16->sn16->sn16  sn16->sn16  sn16  sn16  sn16->
-sn16->sn16->sn16  sn16->sn16  sn16  sn16->sn16  
-sn16->sn16->sn16  sn16->sn16  sn16  sn16->sn16->
-sn16->sn16->sn16  sn16->sn16  sn16->sn16  sn16  
-sn16->sn16->sn16  sn16->sn16  sn16->sn16  sn16->
-sn16->sn16->sn16  sn16->sn16  sn16->sn16->sn16  
-sn16->sn16->sn16  sn16->sn16  sn16->sn16->sn16->
-sn16->sn16->sn16  sn16->sn16->sn16  sn16  sn16  
-sn16->sn16->sn16  sn16->sn16->sn16  sn16  sn16->
-sn16->sn16->sn16  sn16->sn16->sn16  sn16->sn16  
-sn16->sn16->sn16  sn16->sn16->sn16  sn16->sn16->
-sn16->sn16->sn16  sn16->sn16->sn16->sn16  sn16  
-sn16->sn16->sn16  sn16->sn16->sn16->sn16  sn16->
-sn16->sn16->sn16  sn16->sn16->sn16->sn16->sn16  
-sn16->sn16->sn16  sn16->sn16->sn16->sn16->sn16->
-sn16->sn16->sn16->sn16  sn16  sn16  sn16  sn16  
-sn16->sn16->sn16->sn16  sn16  sn16  sn16  sn16->
-sn16->sn16->sn16->sn16  sn16  sn16  sn16->sn16  
-sn16->sn16->sn16->sn16  sn16  sn16  sn16->sn16->
-sn16->sn16->sn16->sn16  sn16  sn16->sn16  sn16  
-sn16->sn16->sn16->sn16  sn16  sn16->sn16  sn16->
-sn16->sn16->sn16->sn16  sn16  sn16->sn16->sn16  
-sn16->sn16->sn16->sn16  sn16  sn16->sn16->sn16->
-sn16->sn16->sn16->sn16  sn16->sn16  sn16  sn16  
-sn16->sn16->sn16->sn16  sn16->sn16  sn16  sn16->
-sn16->sn16->sn16->sn16  sn16->sn16  sn16->sn16  
-sn16->sn16->sn16->sn16  sn16->sn16  sn16->sn16->
-sn16->sn16->sn16->sn16  sn16->sn16->sn16  sn16  
-sn16->sn16->sn16->sn16  sn16->sn16->sn16  sn16->
-sn16->sn16->sn16->sn16  sn16->sn16->sn16->sn16  
-sn16->sn16->sn16->sn16  sn16->sn16->sn16->sn16->
-sn16->sn16->sn16->sn16->sn16  sn16  sn16  sn16  
-sn16->sn16->sn16->sn16->sn16  sn16  sn16  sn16->
-sn16->sn16->sn16->sn16->sn16  sn16  sn16->sn16  
-sn16->sn16->sn16->sn16->sn16  sn16  sn16->sn16->
-sn16->sn16->sn16->sn16->sn16  sn16->sn16  sn16  
-sn16->sn16->sn16->sn16->sn16  sn16->sn16  sn16->
-sn16->sn16->sn16->sn16->sn16  sn16->sn16->sn16  
-sn16->sn16->sn16->sn16->sn16  sn16->sn16->sn16->
-sn16->sn16->sn16->sn16->sn16->sn16  sn16  sn16  
-sn16->sn16->sn16->sn16->sn16->sn16  sn16  sn16->
-sn16->sn16->sn16->sn16->sn16->sn16  sn16->sn16  
-sn16->sn16->sn16->sn16->sn16->sn16  sn16->sn16->
-sn16->sn16->sn16->sn16->sn16->sn16->sn16  sn16  
-sn16->sn16->sn16->sn16->sn16->sn16->sn16  sn16->
-sn16->sn16->sn16->sn16->sn16->sn16->sn16->sn16  
-sn16->sn16->sn16->sn16->sn16->sn16->sn16->sn16->
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8   sn8   bd   } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8   sn8-> bd   } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {sn8   bd    sn8  } \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {sn8   bd    sn8->} \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {sn8   bd    bd   } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8-> sn8   bd   } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8-> sn8-> bd   } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    sn8  } \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    sn8->} \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8   bd    bd   } 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {sn8-> bd    bd   } \tuplet 3/2 {sn8-> bd    bd   } 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {bd    sn8   sn8  } \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {bd    sn8   sn8->} \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    sn8   bd   } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {bd    sn8-> sn8  } \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {bd    sn8-> sn8->} \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8   sn8   bd   } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8   sn8-> bd   } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8-> sn8   bd   } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8-> sn8-> bd   } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {bd    sn8   bd   } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    sn8-> bd   } \tuplet 3/2 {bd    sn8-> bd   } 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {bd    bd    sn8  } \tuplet 3/2 {bd    bd    sn8->} 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {sn8   bd    sn8  } 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {sn8   bd    sn8->} 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {sn8-> bd    sn8  } 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {sn8-> bd    sn8->} 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {bd    sn8   sn8  } 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {bd    sn8   sn8->} 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {bd    sn8-> sn8  } 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {bd    sn8-> sn8->} 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {bd    bd    sn8  } 
+\tuplet 3/2 {bd    bd    sn8->} \tuplet 3/2 {bd    bd    sn8->} 
