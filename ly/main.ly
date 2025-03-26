@@ -16,7 +16,6 @@
   \include "notes.ly"
 }
 
-
 \layout {
   \context {
     \Staff \RemoveEmptyStaves

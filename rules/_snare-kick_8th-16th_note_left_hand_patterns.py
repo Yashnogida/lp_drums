@@ -17,10 +17,7 @@ note_sym = {
   1 : 'sn16^"L"',
   2 : "bd8",
   3 : "bd16",
-  # 1 : 'sn8->^"L"',
-  # 3 : 'sn16->^"L"',
 }
-
 
 notes_per_measure = 8
 

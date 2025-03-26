@@ -1,2 +1,2 @@
-title = " Snare-Kick 8Th 16Th Note Left Hand Patterns"
-instrument = " Snare-Kick 8Th 16Th Note Left Hand Patterns"
+title = \markup { Hihatt  \concat{8 \super th }   \concat{16 \super th }  Note Pedal Patterns}
+instrument = \markup { Hihatt  \concat{8 \super th }   \concat{16 \super th }  Note Pedal Patterns}
