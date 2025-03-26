@@ -1,16 +1,30 @@
 import sys
 import importlib
 import subprocess
+import os
+
+sys.dont_write_bytecode = True   # To not generate __pycache__ folder
 
 rule_path = "rules"
 
 
 def main():
 
-  try:
-    rule_file = importlib.import_module(f"{rule_path}.{sys.argv[1]}")
+  if sys.argv[1] == "--all":
+    for rulefile in os.listdir(rule_path):
+      make_ly(rulefile[:-3])   # Remove ".py" from end of file
+  
+  else: 
+    make_ly(sys.argv[1])
 
-    title = sys.argv[1]
+
+
+def make_ly(rule_filename):
+
+  try:
+    rule_file = importlib.import_module(f"{rule_path}.{rule_filename}")
+
+    title = rule_filename
     title = title_create(title)
   
   except IndexError:
@@ -18,7 +32,7 @@ def main():
     exit()
      
   except ModuleNotFoundError:
-    print(f"\n Can't find rule file: {rule_path}/{sys.argv[1]}.py\n")
+    print(f"\n Can't find rule file: {rule_path}/{rule_filename}.py\n")
     exit()
     
   with open("ly/time.ly", "w") as file:
@@ -35,7 +49,7 @@ def main():
     file.close()   
 
   # Run Lilypond
-  subprocess.check_call(f"lilypond -o pdf/{sys.argv[1]} ly/main.ly", shell=True, stdout=sys.stdout, stderr=subprocess.STDOUT)
+  subprocess.check_call(f"lilypond -o pdf/{rule_filename} ly/main.ly", shell=True, stdout=sys.stdout, stderr=subprocess.STDOUT)
 
 
 
