@@ -64,9 +64,6 @@ def format(note_data):
     for chunk in chunker(note_array_formatted, 3):
       tuple_string += rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
     note_data_formatted.append(f"{tuple_string}\n")
-  # note_data_formatted = [("".join(x) + '\n') for x in note_data_formatted] 
-  
-
   
   return note_data_formatted
 
