@@ -87,7 +87,7 @@ def format(note_data):
   for note_array in note_data:
     note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
 
-  note_data_formatted = [("".join(x) + '\n') for x in note_data_formatted] 
+  note_data_formatted = [(" ".join(x) + '\n') for x in note_data_formatted] 
   
   return note_data_formatted
 

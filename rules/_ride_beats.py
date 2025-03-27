@@ -1,10 +1,10 @@
 
+# For List of note symbols:
+# https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
+
 import re
 import itertools
 from collections import deque
-
-# For List of note symbols:
-# https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
 
 time_signature = "2/4"
 
