@@ -13,8 +13,8 @@ import itertools
 time_signature = "2/4"
 
 note_sym = {
-  0 : 'sn8^"L"',
-  1 : 'sn16^"L"',
+  0 : 'sn8',
+  1 : 'sn16',
   2 : "bd8",
   3 : "bd16",
 }
