@@ -1,2 +1,2 @@
-title = \markup { Snare-Kick Triplet Patterns}
-instrument = \markup { Snare-Kick Triplet Patterns}
+title = \markup { Snare Accent \concat{8 \super th}  Note Triplets}
+instrument = \markup { Snare Accent \concat{8 \super th}  Note Triplets}

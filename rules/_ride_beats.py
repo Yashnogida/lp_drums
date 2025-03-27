@@ -15,7 +15,9 @@ note_sym = {
   3 : "hhp16",  # Hihatt Pedal
 }
 
+
 notes_per_measure = 8
+
 
 def generate():
   

@@ -33,13 +33,10 @@ def format(note_data):
   
   for note_array in note_data:
     note_array = [x + " " * (max_str_len - len(x)) for x in note_array]
-
-  
-  for note_array in note_data:
     tuple_string = ""
     for chunk in chunker(note_array, 3):
       tuple_string += rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
-    note_data_formatted.append(tuple_string)
+    note_data_formatted.append(f"{tuple_string}\n")
   
   return note_data_formatted
 
