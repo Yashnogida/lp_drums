@@ -11,10 +11,12 @@
 
 \markup \vspace #1   % Space Between Title and first staff
 
-\drummode { 
-  \include "time.ly"
-  \include "notes.ly"
-}
+\new DrumStaff <<
+  \drummode {
+    \include "time.ly"
+    \include "notes.ly"
+  }
+>>
 
 \layout {
   \context {
