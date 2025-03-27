@@ -100,7 +100,7 @@ def format(note_data):
 
     # Highlight based on 8th note, 8th/16th note, 16th note
     if "hho16" not in note_array:
-      note_array.insert(0, r'\staffHighlight "palegreen"')
+      note_array.insert(0, r'\staffHighlight #(rgb-color .8 1 .8 1)')  # Light Green
       note_array.append(r'\stopStaffHighlight')
   
     if "hho8 " not in note_array:
