@@ -2,6 +2,7 @@
 
 \paper {
   indent = 0.0
+  #(set-paper-size "letter")
 }
 
 \header {  
