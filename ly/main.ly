@@ -1,8 +1,8 @@
 \version "2.24.4"
 
 \paper {
-  indent = 0.0
   #(set-paper-size "letter")
+  indent = 0.0
 }
 
 \header {  
