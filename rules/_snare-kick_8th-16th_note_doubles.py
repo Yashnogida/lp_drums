@@ -61,6 +61,9 @@ def rule(note_array):
     if (("bd" in na_n2) and ("bd" in na_n1) and ("bd" in na_0)):
         return False
 
+    if (rhythm_mismatch(note_array)):
+       return False
+       
   return True
 
 
@@ -71,17 +74,15 @@ def format(note_data):
   max_str_len = max(len(value) for value in note_sym.values())
   
   for note_array in note_data:
-    
-    if (rhythm_okay(note_array)):
       note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
-
+  
   note_data_formatted = [(" ".join(x) + '\n') for x in note_data_formatted] 
   
   return note_data_formatted
 
 
 
-def rhythm_okay(note_array):
+def rhythm_mismatch(note_array):
 
   # Divide the smallest rhythmic subdivision by each note rhythmic value
   # And check to see that they add up to the measure length (notes_per_measure)
@@ -94,9 +95,9 @@ def rhythm_okay(note_array):
   note_length = [fastest_rhythym / int(length) for length in note_length]
 
   if sum(note_length) != notes_per_measure:
-    return False
+    return True
   
-  return True
+  return False
 
 
 
