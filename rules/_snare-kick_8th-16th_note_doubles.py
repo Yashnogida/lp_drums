@@ -72,7 +72,7 @@ def format(note_data):
   
   for note_array in note_data:
     
-    if (not rhythm_mismatch(note_sym, note_array)):
+    if (rhythm_okay(note_array)):
       note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
 
   note_data_formatted = [(" ".join(x) + '\n') for x in note_data_formatted] 
@@ -81,7 +81,7 @@ def format(note_data):
 
 
 
-def rhythm_mismatch(note_sym, note_array):
+def rhythm_okay(note_array):
 
   # Divide the smallest rhythmic subdivision by each note rhythmic value
   # And check to see that they add up to the measure length (notes_per_measure)
@@ -94,9 +94,9 @@ def rhythm_mismatch(note_sym, note_array):
   note_length = [fastest_rhythym / int(length) for length in note_length]
 
   if sum(note_length) != notes_per_measure:
-    return True
+    return False
   
-  return False
+  return True
 
 
 
