@@ -47,16 +47,6 @@ def generate():
 
 def rule(note_array):   
 
-  # Divide 16 (the smallest rhythmic subdivision) by each note rhythmic value
-  # And check to see that they add up to the measure length (notes_per_measure)
-  note_length = [re.sub('[^0-9]','',x) for x in note_array]  # Strip non-numeric characters
-  note_length = [16 / int(length) for length in note_length]
-
-  # print(f"{note_array} : {note_length} : {sum(note_length)}")
-
-  if sum(note_length) != notes_per_measure:
-    return False
-  
   for note in range(len(note_array)):  
 
     na_n2 = note_array[-2 + note]
@@ -71,10 +61,6 @@ def rule(note_array):
     if (("bd" in na_n2) and ("bd" in na_n1) and ("bd" in na_0)):
         return False
 
-    # # No more than two rests next to eachother 
-    # if (na_n2 == na_n1 == na_0 == "r16"):
-    #     return False
-
   return True
 
 
@@ -85,11 +71,32 @@ def format(note_data):
   max_str_len = max(len(value) for value in note_sym.values())
   
   for note_array in note_data:
-    note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
+    
+    if (not rhythm_mismatch(note_sym, note_array)):
+      note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
 
   note_data_formatted = [(" ".join(x) + '\n') for x in note_data_formatted] 
   
   return note_data_formatted
+
+
+
+def rhythm_mismatch(note_sym, note_array):
+
+  # Divide the smallest rhythmic subdivision by each note rhythmic value
+  # And check to see that they add up to the measure length (notes_per_measure)
+  
+  fastest_rhythym = list(note_sym.values())
+  fastest_rhythym = [re.sub('[^0-9]','',x) for x in fastest_rhythym]
+  fastest_rhythym = max([int(x) for x in fastest_rhythym])
+
+  note_length = [re.sub('[^0-9]','',x) for x in note_array]  # Strip non-numeric characters
+  note_length = [fastest_rhythym / int(length) for length in note_length]
+
+  if sum(note_length) != notes_per_measure:
+    return True
+  
+  return False
 
 
 
