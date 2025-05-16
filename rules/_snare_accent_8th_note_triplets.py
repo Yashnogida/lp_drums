@@ -48,21 +48,9 @@ def format(note_data):
     note_array = [x + " " * (max_str_len - len(x)) for x in note_array]
     tuple_string = ""
 
-    substring = r'^"Moeller Beat"' if highlight else ""
-
-
-    highlight_str_0 = r'\staffHighlight "yellow" '
-    highlight_str_1 = r'^"Moeller Beat" '
-    highlight_str_2 = r'\stopStaffHighlight'
-
-    
     for chunk in chunker(note_array, 3):
       tuple_string += rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
-  
-    if (highlight):
-       tuple_string = highlight_str_0 + \
-                      tuple_string    + \
-                      highlight_str_2
+
 
     note_data_formatted.append(f"{tuple_string}\n")
   
