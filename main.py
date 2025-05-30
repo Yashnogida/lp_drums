@@ -71,6 +71,12 @@ def title_create(title):
       digit_started = False
       number = ""
 
+    elif (digit_started and (last_char == 'n') and (char == 'd')):
+      title_string = title_string[:-(1+len(number))]
+      title_string += f"\concat{{{number} \super nd}} "
+      digit_started = False
+      number = ""
+
     elif (char.isdigit()):
       digit_started = True
       number += char

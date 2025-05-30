@@ -1,71 +1,59 @@
-"""
-Doubles/Singles patterns for snare and kick.
-Meant to be played with left hand only 
-while the right hand plays hihatt patterns.
-"""
-
-import re
-
 # For List of note symbols:
 # https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
 
+import re
+
 time_signature = "2/4"
 
-note_sym = {
-  0 : "sn8",
-  1 : "sn16",
-  2 : "bd8",
-  3 : "bd16",
-}
-
 notes_per_measure = 8
+
+note_sym = {
+  0 : "sn32",
+  1 : "sn16",
+}
 
 def generate():
   
   note_array = []
   note_data = []
   
-  # 2 Because it's the worse case scenario (four 8th notes)
-  for i in range(2, notes_per_measure + 1):
-
+  for i in range(notes_per_measure, notes_per_measure*2 + 1):
     for j in range(pow(len(note_sym), i)):
-
+      
       note_array = convert_base(j, len(note_sym))
-
-      while(len(note_array) < i):
+    
+      while(len(note_array) < notes_per_measure):
         note_array.insert(0, 0)
-    
+
       note_array = [note_sym[x] for x in note_array]
-    
+      
       if (rule(note_array)):
         note_data.append(note_array)
-  
-  
+    
   return note_data
-
 
 
 def rule(note_array):   
 
+  if (rhythm_mismatch(note_array)):
+    return False
+
   for note in range(len(note_array)):  
 
+    na_n3 = note_array[-3 + note]
     na_n2 = note_array[-2 + note]
     na_n1 = note_array[-1 + note]
     na_0 = note_array[note]
     
-    # No more than two snares next to eachother
-    if (("sn" in na_n2) and ("sn" in na_n1) and ("sn" in na_0)): 
+    # No more than two next to eachother
+    if (("sn16" in na_n3) and ("sn16" in na_n2) and ("sn16" in na_n1) and ("sn16" in na_0)): 
         return False
     
-    # No more than two kicks next to eachother
-    if (("bd" in na_n2) and ("bd" in na_n1) and ("bd" in na_0)):
+    # No more than two next to eachother
+    if (("sn32" in na_n2) and ("sn32" in na_n1) and ("sn32" in na_0)): 
         return False
-
-    if (rhythm_mismatch(note_array)):
-       return False
        
   return True
-
 
 
 def format(note_data):
@@ -74,12 +62,18 @@ def format(note_data):
   max_str_len = max(len(value) for value in note_sym.values())
   
   for note_array in note_data:
-      note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
-  
+    note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
+
   note_data_formatted = [(" ".join(x) + '\n') for x in note_data_formatted] 
   
   return note_data_formatted
 
+
+
+
+#######################################
+#         Utility Functions           #
+#######################################
 
 
 def rhythm_mismatch(note_array):
@@ -94,7 +88,7 @@ def rhythm_mismatch(note_array):
   note_length = [re.sub('[^0-9]','',x) for x in note_array]  # Strip non-numeric characters
   note_length = [fastest_rhythym / int(length) for length in note_length]
 
-  if sum(note_length) != notes_per_measure:
+  if sum(note_length) != 2*notes_per_measure:
     return True
   
   return False
