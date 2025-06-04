@@ -1,64 +1,116 @@
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8->} 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  } 
-\tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->} 
+sn16 sn16 sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn32
+sn16 sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn32
+sn16 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn16 sn32
+sn16 sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn32
+sn16 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn16 sn32
+sn16 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn16 sn32
+sn16 sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn16 sn32
+sn16 sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn32 sn16
+sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn16 sn32
+sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn32 sn16
+sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn16 sn32 sn16
+sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn16 sn32
+sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn16
+sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn16
+sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn16
+sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn16 sn16 sn32
+sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn16
+sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn16
+sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn16
+sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn16
+sn32 sn16 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn16
+sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn16
+sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn16
+sn32 sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn16
+sn32 sn32 sn16 sn16 sn32 sn16 sn16 sn32 sn16 sn16
+sn16 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32
+sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32
+sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32
+sn16 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32
+sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32
+sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32
+sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32
+sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32
+sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32
+sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32
+sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32
+sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32
+sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32
+sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32
+sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32
+sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32
+sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16
+sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn32
+sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32
+sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn32
+sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32
+sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16
+sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32
+sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16
+sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn32 sn32
+sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32
+sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn16 sn32 sn32
+sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32
+sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16
+sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn32
+sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32
+sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn32
+sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32
+sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16
+sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32
+sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16
+sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32
+sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16
+sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32
+sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16
+sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32
+sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32
+sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16
+sn32 sn16 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32
+sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32
+sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16
+sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32
+sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16
+sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32
+sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32
+sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16
+sn32 sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32
+sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32
+sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16
+sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32
+sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16
+sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32
+sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16
+sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32
+sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16
+sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16
+sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn32
+sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16
+sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn16 sn32
+sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16
+sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn32
+sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16
+sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn16 sn32
+sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16
+sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16
+sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16
+sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16
+sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16
+sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16
+sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16
+sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16
+sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn16
+sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn16 sn32 sn32 sn16
+sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16 sn32 sn16
+sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn16 sn32 sn32 sn16
+sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn16
+sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16
+sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16
+sn32 sn32 sn16 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16
+sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn16 sn32 sn16
+sn32 sn32 sn16 sn32 sn32 sn16 sn16 sn32 sn32 sn16 sn16
+sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn16 sn32 sn16
+sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn16 sn32 sn16 sn16
+sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn32
+sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32
+sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16 sn32 sn32 sn16

@@ -5,54 +5,63 @@ import re
 
 time_signature = "2/4"
 
-notes_per_measure = 8
+min_notes_per_measure = 8
 
 note_sym = {
-  0 : "sn32",
-  1 : "sn16",
+  0 : "sn16",
+  1 : "sn32",
 }
+
+rhythyms = list(note_sym.values())
+rhythyms = [re.sub('[^0-9]','',x) for x in rhythyms]
+slowest_rhythym = min([int(x) for x in rhythyms])
+fastest_rhythym = max([int(x) for x in rhythyms])
+rhythym_scale = int(fastest_rhythym / slowest_rhythym)
 
 def generate():
   
   note_array = []
   note_data = []
   
-  for i in range(notes_per_measure, notes_per_measure*2 + 1):
+  for i in range(min_notes_per_measure, rhythym_scale * min_notes_per_measure + 1):
     for j in range(pow(len(note_sym), i)):
       
       note_array = convert_base(j, len(note_sym))
-    
-      while(len(note_array) < notes_per_measure):
+      
+      while(len(note_array) < i):
         note_array.insert(0, 0)
-
+      
+      # with open("note_arrays.txt", "a") as f:
+        # f.write(f"{i:6} {j:6} | {note_array} | {[note_sym[x] for x in note_array]}" + "\n")
+      
       note_array = [note_sym[x] for x in note_array]
       
       if (rule(note_array)):
         note_data.append(note_array)
-    
+  
   return note_data
 
 
 def rule(note_array):   
 
+
+  for note_index in range(len(note_array)):  
+
+    na_n2 = note_array[-2 + note_index]
+    na_n1 = note_array[-1 + note_index]
+    na_0 = note_array[note_index]
+    
+    # No more than two next to eachother
+    if (("16" in na_n2) and ("16" in na_n1) and ("16" in na_0)): 
+      return False
+    
+    # No more than two next to eachother
+    if (("32" in na_n2) and ("32" in na_n1) and ("32" in na_0)): 
+        return False
+  
   if (rhythm_mismatch(note_array)):
     return False
-
-  for note in range(len(note_array)):  
-
-    na_n3 = note_array[-3 + note]
-    na_n2 = note_array[-2 + note]
-    na_n1 = note_array[-1 + note]
-    na_0 = note_array[note]
-    
-    # No more than two next to eachother
-    if (("sn16" in na_n3) and ("sn16" in na_n2) and ("sn16" in na_n1) and ("sn16" in na_0)): 
-        return False
-    
-    # No more than two next to eachother
-    if (("sn32" in na_n2) and ("sn32" in na_n1) and ("sn32" in na_0)): 
-        return False
-       
+  
   return True
 
 
@@ -80,16 +89,16 @@ def rhythm_mismatch(note_array):
 
   # Divide the smallest rhythmic subdivision by each note rhythmic value
   # And check to see that they add up to the measure length (notes_per_measure)
-  
-  fastest_rhythym = list(note_sym.values())
-  fastest_rhythym = [re.sub('[^0-9]','',x) for x in fastest_rhythym]
-  fastest_rhythym = max([int(x) for x in fastest_rhythym])
 
   note_length = [re.sub('[^0-9]','',x) for x in note_array]  # Strip non-numeric characters
   note_length = [fastest_rhythym / int(length) for length in note_length]
 
-  if sum(note_length) != 2*notes_per_measure:
+
+  if int(sum(note_length)) != int(rhythym_scale * min_notes_per_measure):
     return True
+  
+  # with open("note_arrays.txt", "a") as f:
+    # f.write(f"{note_array}"+ "\n")
   
   return False
 

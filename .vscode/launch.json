@@ -11,7 +11,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/main.py",
             "console": "integratedTerminal",
-            "args": ["_snare_accent_16th_32nd_note_rolls_#1"]
+            "args": ["_snare_accent_16th-32nd_note_rolls"]
         }
     ]
 }
