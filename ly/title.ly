@@ -1,2 +1,2 @@
-title = \markup { Snare Accent \concat{16 \super th} -\concat{32 \super nd}  Note Rolls}
-instrument = \markup { Snare Accent \concat{16 \super th} -\concat{32 \super nd}  Note Rolls}
+title = \markup { Snare Accent \concat{8 \super th}  Note Triplets}
+instrument = \markup { Snare Accent \concat{8 \super th}  Note Triplets}
