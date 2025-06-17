@@ -2,6 +2,7 @@
 # https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
 
 import re
+from common import *
 
 time_signature = "2/4"
 
@@ -18,7 +19,16 @@ slowest_rhythym = min([int(x) for x in rhythyms])
 fastest_rhythym = max([int(x) for x in rhythyms])
 rhythym_scale = int(fastest_rhythym / slowest_rhythym)
 
-def generate():
+def create_rulefile(title):
+
+    formatted_note_data = format_notes( generate_notes() )
+    
+    with open("ly/staff.ly", "w") as file:
+      rulefile_write_title(file, title)
+      rulefile_write_drumstaff(file, time_signature, formatted_note_data)
+  
+
+def generate_notes():
   
   note_array = []
   note_data = []
@@ -36,13 +46,13 @@ def generate():
       
       note_array = [note_sym[x] for x in note_array]
       
-      if (rule(note_array)):
+      if (apply_rule(note_array)):
         note_data.append(note_array)
   
   return note_data
 
 
-def rule(note_array):   
+def apply_rule(note_array):   
 
 
   for note_index in range(len(note_array)):  
@@ -65,7 +75,7 @@ def rule(note_array):
   return True
 
 
-def format(note_data):
+def format_notes(note_data):
   
   note_data_formatted = []
   max_str_len = max(len(value) for value in note_sym.values())
@@ -101,15 +111,4 @@ def rhythm_mismatch(note_array):
     # f.write(f"{note_array}"+ "\n")
   
   return False
-
-
-
-def convert_base(n, b):
-    if n == 0:
-        return [0]
-    digits = []
-    while n:
-        digits.append(int(n % b))
-        n //= b
-    return digits[::-1]
 

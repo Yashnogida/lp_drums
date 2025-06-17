@@ -5,19 +5,9 @@
   indent = 0.0
 }
 
-\header {  
-    \include "title.ly"
-    tagline = ""
-}
-
 \markup \vspace #1   % Space Between Title and first staff
 
-\new DrumStaff <<
-  \drummode {
-    \include "time.ly"
-    \include "notes.ly"
-  }
->>
+\include "staff.ly"
 
 \layout {
   \context {

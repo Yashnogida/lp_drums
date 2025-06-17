@@ -1,8 +1,9 @@
 # For List of note symbols:
 # https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
 
-time_signature = "2/4"
+from common import *
 
+time_signature = "2/4"
 notes_per_measure = 8
 
 note_sym = {
@@ -10,7 +11,16 @@ note_sym = {
   1 : "sn16->",
 }
 
-def generate():
+def create_rulefile(title):
+
+    formatted_note_data = format_notes( generate_notes() )
+    
+    with open("ly/staff.ly", "w") as file:
+      rulefile_write_title(file, title)
+      rulefile_write_drumstaff(file, time_signature, formatted_note_data)
+  
+
+def generate_notes():
   
   note_array = []
   note_data = []
@@ -28,33 +38,15 @@ def generate():
   return note_data
 
 
-def format(note_data):
+def format_notes(note_data):
   
   note_data_formatted = []
   max_str_len = max(len(value) for value in note_sym.values())
   
   for note_array in note_data:
-    
-
-    for note in range(len(note_array)):
-      
-      na_n2 = note_array[-2 + note]
-      na_n1 = note_array[-1 + note]
-      na_0 = note_array[note]
-    
     note_data_formatted.append([x + " " * (max_str_len - len(x)) for x in note_array])
 
   note_data_formatted = [(" ".join(x) + '\n') for x in note_data_formatted] 
   
   return note_data_formatted
-
-
-def convert_base(n, b):
-    if n == 0:
-        return [0]
-    digits = []
-    while n:
-        digits.append(int(n % b))
-        n //= b
-    return digits[::-1]
 

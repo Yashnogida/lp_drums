@@ -2,6 +2,7 @@ import sys
 import importlib
 import subprocess
 import os
+from rules import *
 
 sys.dont_write_bytecode = True   # To not generate __pycache__ folder
 
@@ -10,7 +11,7 @@ rule_path = "rules"
 
 def main():
 
-  if sys.argv[1] == "--all":
+  if (sys.argv[1] == "--all"):
     for rulefile in os.listdir(rule_path):
       make_ly(rulefile[:-3])   # Remove ".py" from end of file
   
@@ -23,9 +24,7 @@ def make_ly(rule_filename):
 
   try:
     rule_file = importlib.import_module(f"{rule_path}.{rule_filename}")
-
-    title = rule_filename
-    title = title_create(title)
+    title = create_title_string(rule_filename)
   
   except IndexError:
     print("\nNeed rule filename\n")
@@ -35,25 +34,14 @@ def make_ly(rule_filename):
     print(f"\n Can't find rule file: {rule_path}/{rule_filename}.py\n")
     exit()
     
-  with open("ly/time.ly", "w") as file:
-    file.write(rf'\time {rule_file.time_signature}')
-
-  with open("ly/notes.ly", "w") as file:
-    
-    note_data = rule_file.generate()
-    note_data = rule_file.format(note_data)
-
-    for note_string in note_data:
-      file.write(note_string)
-
-    file.close()   
+  rule_file.create_rulefile(title)
 
   # Run Lilypond
   subprocess.check_call(f"lilypond -o pdf/{rule_filename} ly/main.ly", shell=True, stdout=sys.stdout, stderr=subprocess.STDOUT)
 
 
 
-def title_create(title):
+def create_title_string(title):
   
   title = title.replace('_', ' ')
   title = title_capitalize(title)
@@ -86,11 +74,10 @@ def title_create(title):
       title_string += char
 
     last_char = char
-    
 
-  with open("ly/title.ly", "w") as file:
-    file.write(f'title = \markup {{{title_string}}}\n')
-    file.write(f'instrument = \markup {{{title_string}}}\n')
+  # with open("ly/title.ly", "w") as file:
+  #   file.write(f'title = \markup {{{title_string}}}\n')
+  #   file.write(f'instrument = \markup {{{title_string}}}\n')
   
   return title_string
 

@@ -1,10 +1,11 @@
+# For List of note symbols:
+# https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
 
 import re
 import itertools
 from collections import deque
-
-# For List of note symbols:
-# https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
+from common import *
+from rules import *
 
 time_signature = "2/4"
 
@@ -17,7 +18,18 @@ note_sym = {
 
 notes_per_measure = 8
 
-def generate():
+def create_rulefile(title):
+    
+    note_data = generate_notes()
+    note_data = format_notes(note_data)
+    
+    with open("ly/staff.ly", "w") as file:
+      rulefile_write_title(file, title)
+      rulefile_write_drumstaff(file, time_signature, note_data)
+      file.close()
+
+
+def generate_notes():
   
   note_array = []
   note_data = []
@@ -33,15 +45,13 @@ def generate():
     
       note_array = [note_sym[x] for x in note_array]
     
-      if (rule(note_array)):
+      if (apply_rule(note_array)):
         note_data.append(note_array)
   
   return note_data
 
 
-
-
-def rule(note_array):   
+def apply_rule(note_array):   
 
   # Divide 16 (the smallest rhythmic subdivision) by each note rhythmic value
   # And check to see that they add up to the measure length (notes_per_measure)
@@ -87,7 +97,7 @@ def rule(note_array):
 
 
 
-def format(note_data):
+def format_notes(note_data):
 
   note_data_formatted = []
   
@@ -132,14 +142,3 @@ def format(note_data):
 
   return note_data_formatted_out
   
-
-
-def convert_base(n, b):
-    if n == 0:
-        return [0]
-    digits = []
-    while n:
-        digits.append(int(n % b))
-        n //= b
-    return digits[::-1]
-

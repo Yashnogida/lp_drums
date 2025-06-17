@@ -1,4 +1,9 @@
 
+# For List of note symbols:
+# https://lilypond.org/doc/v2.24/Documentation/notation/percussion-notes
+
+from common import *
+
 time_signature = "2/4"
 
 note_sym = {
@@ -8,8 +13,17 @@ note_sym = {
 }
 
 notes_per_measure = 6
+
+def create_rulefile(title):
+
+  formatted_note_data = format_notes( generate_notes() )
   
-def generate():
+  with open("ly/staff.ly", "w") as file:
+    rulefile_write_title(file, title)
+    rulefile_write_drumstaff(file, time_signature, formatted_note_data)
+
+  
+def generate_notes():
   
   note_array = []
   note_data = []
@@ -21,15 +35,14 @@ def generate():
     while(len(note_array) < notes_per_measure):
       note_array.insert(0, 0)
 
-    if (rule(note_array)):
+    if (apply_rule(note_array)):
       note_array = [note_sym[x] for x in note_array]
       note_data.append(note_array)
   
   return note_data
 
 
-
-def rule(note_array):   
+def apply_rule(note_array):   
 
   note_array = [note_sym[x] for x in note_array]
 
@@ -53,7 +66,7 @@ def rule(note_array):
   return True
 
 
-def format(note_data):
+def format_notes(note_data):
   
   note_data_formatted = []
   max_str_len = max(len(value) for value in note_sym.values())
@@ -66,16 +79,3 @@ def format(note_data):
     note_data_formatted.append(f"{tuple_string}\n")
   
   return note_data_formatted
-
-
-def chunker(seq, size):
-    return (seq[pos:pos + size] for pos in range(0, len(seq), size))
-
-def convert_base(n, b):
-    if n == 0:
-        return [0]
-    digits = []
-    while n:
-        digits.append(int(n % b))
-        n //= b
-    return digits[::-1]
