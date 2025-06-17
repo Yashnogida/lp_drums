@@ -42,3 +42,21 @@ def rulefile_write_drumstaff(file, time_signature, formatted_note_data):
     
     file.write("  }\n")
     file.write(">>\n")  # Close DrumStaff
+    
+def rulefile_write_rhythymic_staff(file, time_signature, formatted_note_data):
+
+    file.write("\n")
+    file.write("\markup \\vspace #1\n")
+    file.write("\n")
+
+    file.write("\\new RhythmicStaff {\n")
+
+    file.write("\n")
+    file.write(f"     \\time {time_signature}\n")
+    file.write("\n")
+    
+    for entry in formatted_note_data:
+        file.write("     " + entry.strip() + "\n")
+    file.write("\n")
+    
+    file.write("}\n")  # Close RhythmicStaff
