@@ -1,78 +1,49 @@
 \header {
-  title = \markup { Snare Accent \concat{8 \super th}  Note Triplets}
-  instrument = \markup { Snare Accent \concat{8 \super th}  Note Triplets}
+  title = \markup { Rudiments}
+  instrument = \markup { Rudiments}
   tagline = ""
 }
 
-\new DrumStaff <<
-  \drummode {
+\markup \column {
+  \vspace #1
+  \bold "Doubles"
+  \vspace #0.5
+}
+
+
+\markup \vspace #1
+
+\new RhythmicStaff {
+
+     \time 1/4
+
+     c16^"R" c16^"R" c16^"L" c16^"L"
+     c16^"R" c16^"L" c16^"L" c16^"R"
+     c16^"L" c16^"L" c16^"R" c16^"R"
+     c16^"L" c16^"R" c16^"R" c16^"L"
+
+}
+
+\markup \column {
+  \vspace #1
+  \bold "Paradiddles"
+  \vspace #0.5
+}
+
+
+\markup \vspace #1
+
+\new RhythmicStaff {
 
      \time 2/4
 
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->}
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8   sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8   sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8  } \tuplet 3/2 {sn8-> sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8   sn8-> sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8   sn8->}
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8  }
-     \tuplet 3/2 {sn8-> sn8-> sn8->} \tuplet 3/2 {sn8-> sn8-> sn8->}
+     c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L"
+     c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R"
+     c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L"
+     c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R"
+     c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R"
+     c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L"
+     c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R"
+     c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L"
 
-  }
->>
+}

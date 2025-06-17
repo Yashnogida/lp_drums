@@ -60,3 +60,13 @@ def rulefile_write_rhythymic_staff(file, time_signature, formatted_note_data):
     file.write("\n")
     
     file.write("}\n")  # Close RhythmicStaff
+
+def rulefile_write_section_title(file, title):
+    file.write("\n")
+    file.write("\\markup \\column {\n")
+    file.write("  \\vspace #1\n")
+    # file.write("  \\fill-line { \\bold \"" + title + "\" }\n")  # For Centered Section Title
+    file.write(f'  \\bold "{title}"\n')                          # For Left-Aligned Section Title
+    file.write("  \\vspace #0.5\n")
+    file.write("}\n")
+    file.write("\n")

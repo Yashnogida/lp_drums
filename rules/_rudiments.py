@@ -3,7 +3,6 @@
 
 from common import *
 
-time_signature = "2/4"
 notes_per_measure = 8
 
 note_sym = {
@@ -13,15 +12,21 @@ note_sym = {
 
 def create_rulefile(title):
 
+    doubles = rotate_notes([0, 0, 1, 1])  # RLRR LRLL
+    doubles = format_notes(doubles)
+
     paradiddles = rotate_notes([0, 1, 0, 0, 1, 0, 1, 1])  # RLRR LRLL
     paradiddles = format_notes(paradiddles)
     
     with open("ly/staff.ly", "w") as file:
       
       rulefile_write_title(file, title)
-      rulefile_write_rhythymic_staff(file, time_signature, paradiddles)
       
-      rulefile_write_rhythymic_staff(file, time_signature, paradiddles)
+      rulefile_write_section_title(file, "Doubles")
+      rulefile_write_rhythymic_staff(file, "1/4", doubles)
+      
+      rulefile_write_section_title(file, "Paradiddles")
+      rulefile_write_rhythymic_staff(file, "2/4", paradiddles)
   
 def rotate_notes(note_pattern):
     
