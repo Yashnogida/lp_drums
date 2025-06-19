@@ -18,9 +18,20 @@ def create_rulefile(title):
     paradiddles = rotate_notes([0, 1, 0, 0, 1, 0, 1, 1])  # RLRR LRLL
     paradiddles = format_notes(paradiddles)
     
+    six_stroke_roll = rotate_notes([0, 1, 0, 0, 1, 1])  # RLRRLL
+    six_stroke_roll = format_notes(six_stroke_roll)
+    six_stroke_roll = format_triplets(six_stroke_roll)
+    
+    
     other_singles_doubles = generate_notes()
     other_singles_doubles = format_notes(other_singles_doubles)
-
+    doubles_temp_check = [x.strip() + " " + x.strip() + "\n" for x in doubles]
+    
+    other_singles_doubles_curated = []
+    
+    for x in other_singles_doubles:
+      if (not ((x in doubles_temp_check) or (x in paradiddles))):
+        other_singles_doubles_curated.append(x)
     
     with open("ly/staff.ly", "w") as file:
       
@@ -32,8 +43,12 @@ def create_rulefile(title):
       rulefile_write_section_title(file, "Paradiddles")
       rulefile_write_rhythymic_staff(file, "2/4", paradiddles)
       
-      rulefile_write_section_title(file, "Other Singles/Doubles")
-      rulefile_write_rhythymic_staff(file, "2/4", other_singles_doubles)
+      rulefile_write_section_title(file, "Singles/Doubles/Paradiddles")
+      rulefile_write_rhythymic_staff(file, "2/4", other_singles_doubles_curated)
+      
+      rulefile_write_section_title(file, "Six-Stroke Rolls (Triplets)")
+      rulefile_write_rhythymic_staff(file, "2/4", six_stroke_roll, tuplets=True)
+    
 
   
 def rotate_notes(note_pattern):
@@ -97,3 +112,17 @@ def format_notes(note_data):
   note_data_formatted = [(" ".join(x) + '\n') for x in note_data_formatted] 
   
   return note_data_formatted
+
+
+
+def format_triplets(note_data):
+  
+  note_data_triplets = []
+  
+  note_data = [data.strip() for data in note_data]
+  
+  for data in note_data:
+    for chunk in chunker(data.split(), 3):
+      note_data_triplets.append(rf"\tuplet 3/4 {{{' '.join(chunk)}}} ")
+  
+  return note_data_triplets

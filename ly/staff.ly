@@ -5,9 +5,7 @@
 }
 
 \markup \column {
-  \vspace #1
-  \bold "Doubles"
-  \vspace #0.5
+  \bold { \rounded-box "Doubles" }
 }
 
 
@@ -25,9 +23,7 @@
 }
 
 \markup \column {
-  \vspace #1
-  \bold "Paradiddles"
-  \vspace #0.5
+  \bold { \rounded-box "Paradiddles" }
 }
 
 
@@ -49,9 +45,7 @@
 }
 
 \markup \column {
-  \vspace #1
-  \bold "Other Singles/Doubles"
-  \vspace #0.5
+  \bold { \rounded-box "Singles/Doubles/Paradiddles" }
 }
 
 
@@ -64,48 +58,63 @@
      c16^"R" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L"
      c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L"
      c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L"
-     c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L"
-     c16^"R" c16^"R" c16^"L" c16^"L" c16^"R" c16^"R" c16^"L" c16^"L"
      c16^"R" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L"
      c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L"
      c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R"
-     c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L"
      c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L"
      c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R"
      c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"L"
      c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L"
      c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R"
      c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"R" c16^"L"
-     c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R"
      c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"L"
      c16^"R" c16^"L" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L"
-     c16^"R" c16^"L" c16^"L" c16^"R" c16^"R" c16^"L" c16^"L" c16^"R"
-     c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L"
      c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R"
      c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L"
      c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L"
      c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R"
      c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R"
      c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L"
-     c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R"
-     c16^"L" c16^"R" c16^"R" c16^"L" c16^"L" c16^"R" c16^"R" c16^"L"
      c16^"L" c16^"R" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R"
      c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"R"
-     c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L"
      c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"L" c16^"R"
      c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L"
      c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R"
      c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"R"
      c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L"
      c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R"
-     c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R"
      c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L"
      c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R"
      c16^"L" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R"
-     c16^"L" c16^"L" c16^"R" c16^"R" c16^"L" c16^"L" c16^"R" c16^"R"
-     c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R" c16^"L" c16^"R"
      c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"R" c16^"R"
      c16^"L" c16^"L" c16^"R" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R"
      c16^"L" c16^"L" c16^"R" c16^"L" c16^"L" c16^"R" c16^"L" c16^"R"
+
+}
+
+\markup \column {
+  \bold { \rounded-box "Six-Stroke Rolls (Triplets)" }
+}
+
+
+\markup \vspace #1
+
+\new RhythmicStaff {
+
+     \time 2/4
+
+     \tupletDown
+     \tuplet 3/4 {c16^"R" c16^"L" c16^"R"}
+     \tuplet 3/4 {c16^"R" c16^"L" c16^"L"}
+     \tuplet 3/4 {c16^"L" c16^"R" c16^"R"}
+     \tuplet 3/4 {c16^"L" c16^"L" c16^"R"}
+     \tuplet 3/4 {c16^"R" c16^"R" c16^"L"}
+     \tuplet 3/4 {c16^"L" c16^"R" c16^"L"}
+     \tuplet 3/4 {c16^"R" c16^"L" c16^"L"}
+     \tuplet 3/4 {c16^"R" c16^"L" c16^"R"}
+     \tuplet 3/4 {c16^"L" c16^"L" c16^"R"}
+     \tuplet 3/4 {c16^"L" c16^"R" c16^"R"}
+     \tuplet 3/4 {c16^"L" c16^"R" c16^"L"}
+     \tuplet 3/4 {c16^"R" c16^"R" c16^"L"}
 
 }

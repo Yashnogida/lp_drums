@@ -56,8 +56,7 @@ def format_notes(note_data):
       na_n1 = note_array[-1 + note]
       na_0 = note_array[note]
       
-      if (("->" in na_n1) and ("->" in na_0)) or \
-      ((na_n2 == "sn8") and (na_n1 == "sn8") and (na_0 == "sn8")):
+      if (("->" in na_n1) and ("->" in na_0)) or ((na_n2 == "sn8") and (na_n1 == "sn8") and (na_0 == "sn8")):
         highlight = False
     
     note_array = [x + " " * (max_str_len - len(x)) for x in note_array]
@@ -65,7 +64,6 @@ def format_notes(note_data):
 
     for chunk in chunker(note_array, 3):
       tuple_string += rf"\tuplet 3/2 {{{' '.join(chunk)}}} "
-
 
     note_data_formatted.append(f"{tuple_string}\n")
   

@@ -43,7 +43,9 @@ def rulefile_write_drumstaff(file, time_signature, formatted_note_data):
     file.write("  }\n")
     file.write(">>\n")  # Close DrumStaff
     
-def rulefile_write_rhythymic_staff(file, time_signature, formatted_note_data):
+    
+    
+def rulefile_write_rhythymic_staff(file, time_signature, formatted_note_data, tuplets=False):
 
     file.write("\n")
     file.write("\markup \\vspace #1\n")
@@ -55,18 +57,25 @@ def rulefile_write_rhythymic_staff(file, time_signature, formatted_note_data):
     file.write(f"     \\time {time_signature}\n")
     file.write("\n")
     
+    if (tuplets):
+        file.write("     \\tupletDown\n")   # Puts Tuplet numbers below the notes
+
     for entry in formatted_note_data:
         file.write("     " + entry.strip() + "\n")
     file.write("\n")
     
     file.write("}\n")  # Close RhythmicStaff
 
+
+
 def rulefile_write_section_title(file, title):
     file.write("\n")
     file.write("\\markup \\column {\n")
-    file.write("  \\vspace #1\n")
+    # file.write("  \\vspace #1\n")
     # file.write("  \\fill-line { \\bold \"" + title + "\" }\n")  # For Centered Section Title
-    file.write(f'  \\bold "{title}"\n')                          # For Left-Aligned Section Title
-    file.write("  \\vspace #0.5\n")
+    file.write(f'  \\bold {{ \\rounded-box "{title}" }}\n')      # For Left-Aligned Section Title
+    # file.write("  \\vspace #0.5\n")
     file.write("}\n")
     file.write("\n")
+    
+    
