@@ -104,17 +104,17 @@
      \time 2/4
 
      \tupletDown
-     \tuplet 3/4 {c16^"R" c16^"L" c16^"R"}
      \tuplet 3/4 {c16^"R" c16^"L" c16^"L"}
-     \tuplet 3/4 {c16^"L" c16^"R" c16^"R"}
-     \tuplet 3/4 {c16^"L" c16^"L" c16^"R"}
      \tuplet 3/4 {c16^"R" c16^"R" c16^"L"}
-     \tuplet 3/4 {c16^"L" c16^"R" c16^"L"}
-     \tuplet 3/4 {c16^"R" c16^"L" c16^"L"}
-     \tuplet 3/4 {c16^"R" c16^"L" c16^"R"}
      \tuplet 3/4 {c16^"L" c16^"L" c16^"R"}
+     \tuplet 3/4 {c16^"R" c16^"L" c16^"R"}
      \tuplet 3/4 {c16^"L" c16^"R" c16^"R"}
      \tuplet 3/4 {c16^"L" c16^"R" c16^"L"}
      \tuplet 3/4 {c16^"R" c16^"R" c16^"L"}
+     \tuplet 3/4 {c16^"R" c16^"L" c16^"L"}
+     \tuplet 3/4 {c16^"R" c16^"L" c16^"R"}
+     \tuplet 3/4 {c16^"L" c16^"L" c16^"R"}
+     \tuplet 3/4 {c16^"L" c16^"R" c16^"L"}
+     \tuplet 3/4 {c16^"L" c16^"R" c16^"R"}
 
 }

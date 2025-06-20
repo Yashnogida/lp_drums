@@ -18,7 +18,7 @@ def create_rulefile(title):
     paradiddles = rotate_notes([0, 1, 0, 0, 1, 0, 1, 1])  # RLRR LRLL
     paradiddles = format_notes(paradiddles)
     
-    six_stroke_roll = rotate_notes([0, 1, 0, 0, 1, 1])  # RLRRLL
+    six_stroke_roll = rotate_notes([0, 1, 1, 0, 0, 1])  # RLLRRL
     six_stroke_roll = format_notes(six_stroke_roll)
     six_stroke_roll = format_triplets(six_stroke_roll)
     
