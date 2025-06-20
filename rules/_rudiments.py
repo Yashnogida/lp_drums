@@ -3,7 +3,6 @@
 
 from common import *
 
-notes_per_measure = 8
 
 note_sym = {
   0 : 'c16^"R"',
@@ -12,27 +11,36 @@ note_sym = {
 
 def create_rulefile(title):
 
+    # Doubles
     doubles = rotate_notes([0, 0, 1, 1])  # RLRR LRLL
     doubles = format_notes(doubles)
 
+    # Paradiddles 
     paradiddles = rotate_notes([0, 1, 0, 0, 1, 0, 1, 1])  # RLRR LRLL
     paradiddles = format_notes(paradiddles)
     
+    # Other Combinations of Singles, Doubles, and Paradiddles
+    singles_doubles_paradiddles = generate_notes(8)
+    singles_doubles_paradiddles = format_notes(singles_doubles_paradiddles)
+    doubles_temp_check = [x.strip() + " " + x.strip() + "\n" for x in doubles]
+    
+    other_singles_doubles_curated = []
+    
+    for x in singles_doubles_paradiddles:
+      if (not ((x in doubles_temp_check) or (x in paradiddles))):
+        other_singles_doubles_curated.append(x)
+        
+    # Six Stroke Rolls (Triplets)
     six_stroke_roll = rotate_notes([0, 1, 1, 0, 0, 1])  # RLLRRL
     six_stroke_roll = format_notes(six_stroke_roll)
     six_stroke_roll = format_triplets(six_stroke_roll)
     
     
-    other_singles_doubles = generate_notes()
-    other_singles_doubles = format_notes(other_singles_doubles)
-    doubles_temp_check = [x.strip() + " " + x.strip() + "\n" for x in doubles]
+    singles_doubles_triplets = generate_notes(6)
+    singles_doubles_triplets = format_notes(singles_doubles_triplets)
+    singles_doubles_triplets = format_triplets(singles_doubles_triplets)
     
-    other_singles_doubles_curated = []
-    
-    for x in other_singles_doubles:
-      if (not ((x in doubles_temp_check) or (x in paradiddles))):
-        other_singles_doubles_curated.append(x)
-    
+    # Write 'em!
     with open("ly/staff.ly", "w") as file:
       
       rulefile_write_title(file, title)
@@ -46,8 +54,12 @@ def create_rulefile(title):
       rulefile_write_section_title(file, "Singles/Doubles/Paradiddles")
       rulefile_write_rhythymic_staff(file, "2/4", other_singles_doubles_curated)
       
+      rulefile_write_section_title(file, "Singles/Doubles (Triplets)")
+      rulefile_write_rhythymic_staff(file, "2/4", singles_doubles_triplets, tuplets=True)
+
       rulefile_write_section_title(file, "Six-Stroke Rolls (Triplets)")
       rulefile_write_rhythymic_staff(file, "2/4", six_stroke_roll, tuplets=True)
+      
     
 
   
@@ -63,7 +75,7 @@ def rotate_notes(note_pattern):
   return note_data
 
 
-def generate_notes():
+def generate_notes(notes_per_measure):
   
   note_array = []
   note_data = []
