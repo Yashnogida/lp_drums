@@ -1,10 +1,10 @@
 
-\new DrumStaff <<
-  \drummode {
+\markup \vspace #1
+
+\new RhythmicStaff {
 
      \time 2/4
 
-     sn16-> sn16   sn16-> sn16   sn16   sn16-> sn16-> sn16->
+     c16->^"R" c16^"L"   c16->^"R" c16->^"L" c16^"L"   c16->^"R" c16^"L"   c16^"R"
 
-  }
->>
+}
