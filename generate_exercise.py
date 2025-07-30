@@ -12,33 +12,42 @@ from tkinter import *
 from PIL import ImageTk, Image
 import os
 
+COLOR_CARMINE = "#931f1d";
+COLOR_CHAMOISEE = "#937b63";
+COLOR_MOSS = "#8a9b68";
+COLOR_LAPIS = "#175676";
+COLOR_WHITE = "#ffffff";
+  
+NUMBER_WIDGETS = 6
 
-    
+root = Tk()
+root.resizable(False, False)
+root.title('Rudiment Generator')
+root.geometry("620x875")
+root.configure(background=COLOR_CHAMOISEE)
+
+# Set up the Frames
+score_window = Frame(root, bg=COLOR_WHITE, highlightbackground=COLOR_LAPIS, highlightthickness=1)
+score_window.configure(height=707, width=500)
+score_window.grid_propagate(0)  # Fix it to support A5 Paper Size
+score_window.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
+
+control_window = Frame(root, bg=COLOR_MOSS, highlightbackground=COLOR_LAPIS, highlightthickness=1) 
+control_window.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
+
+control_subwindows = []
+score_objects = []
+png_objects = []
+  
 
 def main():
 
   
-  root = Tk()
-  root.title('Rudiment Generator')
-  root.geometry("800x875")
-  root.configure(background='White')
-  
-  # Set up the Frames
-  score_window = Frame(root, bg="White", highlightbackground="black", highlightthickness=1)
-  score_window.configure(height=707, width=500)
-  score_window.grid_propagate(0)  # Fix it to support A5 and Letter Paper Size
-  score_window.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
-  
-  control_window = Frame(root, bg="grey", highlightbackground="black", highlightthickness=1) 
-  control_window.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
-
-  control_subwindows = []
-  score_pngs = []
-  
-  for i in range(6):
+  for i in range(NUMBER_WIDGETS):
     
-    control_subwindows.append(Frame(control_window, bg="red", highlightbackground="black", highlightthickness=1))
+    control_subwindows.append(Frame(control_window, bg="red", highlightbackground=COLOR_LAPIS, highlightthickness=1))
     control_subwindows[i].grid(row=i, column=0, sticky="nsew", padx=5, pady=45)
+    # control_subwindows[i].place(in_=control_window, anchor = CENTER, relx = .5, rely = (i/NUMBER_WIDGETS)+0.06)
 
     button_generate = Button(control_subwindows[i], text="Generate", command=click_generate_rudiment)
     button_generate["highlightthickness"] = 0
@@ -47,16 +56,28 @@ def main():
     button_edit_rudiment = Button(control_subwindows[i], text="Edit Rudiment", command=click_edit_rudiment)
     button_edit_rudiment["highlightthickness"] = 0
     button_edit_rudiment.grid( row=1, column=0, padx=1, pady=1, sticky="nsew")
+    
+    png_objects.append( ImageTk.PhotoImage( Image.open("temp/default.png") ) )
+    score_objects.append(Label(score_window, image = png_objects[i], bd=0))
+    score_objects[i].place(in_=score_window, anchor = CENTER, relx = .5, rely = (i/NUMBER_WIDGETS)+0.075)
 
-    png_filepath = create_png( get_random_rudiment(), f"test_{i}")
-    score_pngs.append( ImageTk.PhotoImage( Image.open(png_filepath) ))
-    panel = Label(score_window, image = score_pngs[i], bd=0)
-    panel.grid(row=i, column=0, padx=10, pady=20, sticky="nsew")
-  
+    score_objects[i].bind("<Button-1>", func=fucka)
+    
+    
   root.mainloop()
   
+def fucka(arg):
+  print(arg)
+  Frame(control_window, bg="red", highlightbackground=COLOR_LAPIS, highlightthickness=1)
+  score_objects[0]["highlightthickness"] = 1
+  score_objects[0]["highlightbackground"] = COLOR_MOSS
+  score_objects[0].place(in_=score_window, anchor = CENTER, relx = .5, rely = (0/NUMBER_WIDGETS)+0.075)
+  
 def click_generate_rudiment():
-  print("Generating Rudiment...")
+  png_filepath = create_png(get_random_rudiment(), "banana")
+  png_objects[0] = ImageTk.PhotoImage( Image.open(f"{png_filepath}") )
+  score_objects[0] = Label(score_window, image = png_objects[0], bd=0)
+  score_objects[0].place(in_=score_window, anchor = CENTER, relx = .5, rely = (0/NUMBER_WIDGETS)+0.075)
   
  
 def click_edit_rudiment():
@@ -93,6 +114,7 @@ def get_random_rudiment():
   random_index = round( random.random() * len(stick_patterns) )
   random_stick_pattern = [ stick_patterns[random_index] ]
   
+  print(random_stick_pattern)
   return random_stick_pattern
 
 
