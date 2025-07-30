@@ -14,58 +14,69 @@ import os
 
 
     
-working_folder = "temp"
 
 def main():
 
-  create_png( get_random_rudiment(), "test_0")
-  create_png( get_random_rudiment(), "test_1")
-  create_png( get_random_rudiment(), "test_2")
-  create_png( get_random_rudiment(), "test_3")
   
   root = Tk()
+  root.title('Rudiment Generator')
+  root.geometry("800x875")
   root.configure(background='White')
+  
+  # Set up the Frames
+  score_window = Frame(root, bg="White", highlightbackground="black", highlightthickness=1)
+  score_window.configure(height=707, width=500)
+  score_window.grid_propagate(0)  # Fix it to support A5 and Letter Paper Size
+  score_window.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
   
   control_window = Frame(root, bg="grey", highlightbackground="black", highlightthickness=1) 
   control_window.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 
-  score_window = Frame(root, bg="ivory3")
-  score_window.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
-
-  variable = StringVar(control_window)
-  variable.set("Select Rudiment") # default value
+  control_subwindows = []
+  score_pngs = []
   
-  rudiment_option = OptionMenu(control_window, variable, "one", "two", "three")
-  rudiment_option["highlightthickness"] = 0
-  rudiment_option.grid(padx=10, pady=10, row=0, column=0, sticky="nsew")
+  for i in range(6):
+    
+    control_subwindows.append(Frame(control_window, bg="red", highlightbackground="black", highlightthickness=1))
+    control_subwindows[i].grid(row=i, column=0, sticky="nsew", padx=5, pady=45)
 
-  my_button = Button(control_window, text="Generate", command=on_button_click)
-  my_button.grid(row=1, column=0, padx=10, pady=0, sticky="nsew")
+    button_generate = Button(control_subwindows[i], text="Generate", command=click_generate_rudiment)
+    button_generate["highlightthickness"] = 0
+    button_generate.grid(row=0, column=0, padx=1, pady=1, sticky="nsew")
+  
+    button_edit_rudiment = Button(control_subwindows[i], text="Edit Rudiment", command=click_edit_rudiment)
+    button_edit_rudiment["highlightthickness"] = 0
+    button_edit_rudiment.grid( row=1, column=0, padx=1, pady=1, sticky="nsew")
 
-
-  img_0 = ImageTk.PhotoImage( Image.open(f"{working_folder}/test_0.preview.png"))
-  img_1 = ImageTk.PhotoImage( Image.open(f"{working_folder}/test_1.preview.png"))
-  img_2 = ImageTk.PhotoImage( Image.open(f"{working_folder}/test_2.preview.png"))
-  panel_0 = Label(score_window, image = img_0, bd=0)
-  panel_1 = Label(score_window, image = img_1, bd=0)
-  panel_2 = Label(score_window, image = img_2, bd=0)
-  panel_0.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
-  panel_1.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
-  panel_2.grid(row=2, column=0, padx=10, pady=10, sticky="nsew")
+    png_filepath = create_png( get_random_rudiment(), f"test_{i}")
+    score_pngs.append( ImageTk.PhotoImage( Image.open(png_filepath) ))
+    panel = Label(score_window, image = score_pngs[i], bd=0)
+    panel.grid(row=i, column=0, padx=10, pady=20, sticky="nsew")
   
   root.mainloop()
   
-def on_button_click():
-
-   return
+def click_generate_rudiment():
+  print("Generating Rudiment...")
+  
+ 
+def click_edit_rudiment():
+  rudiment_editor = Tk()
+  rudiment_editor.mainloop()
+  
+  print("Editing Rudiment...")
+  
 
 def create_png(pattern, png_filename):
   
+  working_folder = "temp"
+
   with open("ly/staff.ly", "w") as file:
     rulefile_write_rhythymic_staff(file, "2/4", pattern)
   
   subprocess.run(f"lilypond -o {working_folder}/{png_filename} -dpreview -dno-print-pages ly/main.ly")
   os.remove(f"{working_folder}/{png_filename}.preview.pdf")
+  
+  return f"{working_folder}/{png_filename}.preview.png"
   
 
 def get_random_rudiment():
