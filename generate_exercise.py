@@ -21,19 +21,9 @@ COLOR_WHITE = "#ffffff";
 NUMBER_WIDGETS = 6
 
 root = Tk()
-root.resizable(False, False)
-root.title('Rudiment Generator')
-root.geometry("620x875")
-root.configure(background=COLOR_CHAMOISEE)
 
-# Set up the Frames
-score_window = Frame(root, bg=COLOR_WHITE, highlightbackground=COLOR_LAPIS, highlightthickness=1)
-score_window.configure(height=707, width=500)
-score_window.grid_propagate(0)  # Fix it to support A5 Paper Size
-score_window.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
-
+score_window = Frame(root, bg=COLOR_LAPIS, highlightbackground=COLOR_LAPIS, highlightthickness=1)
 control_window = Frame(root, bg=COLOR_MOSS, highlightbackground=COLOR_LAPIS, highlightthickness=1) 
-control_window.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 
 control_subwindows = []
 score_objects = []
@@ -42,31 +32,39 @@ png_objects = []
 
 def main():
 
+  gui_init()
+  root.mainloop()
+
+def gui_init():
+  
+  root.resizable(False, False)
+  root.title('Rudiment Generator')
+  root.geometry("620x875")
+  root.configure(background=COLOR_CHAMOISEE)
+  
+  score_window.configure(height=707, width=500)
+  score_window.grid_propagate(0)  # Fix it to support A5 Paper Size
+  score_window.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
+  
+  control_window.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
   
   for i in range(NUMBER_WIDGETS):
     
     control_subwindows.append(Frame(control_window, bg="red", highlightbackground=COLOR_LAPIS, highlightthickness=1))
     control_subwindows[i].grid(row=i, column=0, sticky="nsew", padx=5, pady=45)
-    # control_subwindows[i].place(in_=control_window, anchor = CENTER, relx = .5, rely = (i/NUMBER_WIDGETS)+0.06)
 
     button_generate = Button(control_subwindows[i], text="Generate", command=click_generate_rudiment)
     button_generate["highlightthickness"] = 0
     button_generate.grid(row=0, column=0, padx=1, pady=1, sticky="nsew")
   
-    button_edit_rudiment = Button(control_subwindows[i], text="Edit Rudiment", command=click_edit_rudiment)
-    button_edit_rudiment["highlightthickness"] = 0
-    button_edit_rudiment.grid( row=1, column=0, padx=1, pady=1, sticky="nsew")
-    
     png_objects.append( ImageTk.PhotoImage( Image.open("temp/default.png") ) )
     score_objects.append(Label(score_window, image = png_objects[i], bd=0))
     score_objects[i].place(in_=score_window, anchor = CENTER, relx = .5, rely = (i/NUMBER_WIDGETS)+0.075)
 
-    score_objects[i].bind("<Button-1>", func=fucka)
+    score_objects[i].bind("<Button-1>", func=mouse_click)
     
-    
-  root.mainloop()
-  
-def fucka(arg):
+
+def mouse_click(arg):
   print(arg)
   Frame(control_window, bg="red", highlightbackground=COLOR_LAPIS, highlightthickness=1)
   score_objects[0]["highlightthickness"] = 1
@@ -79,12 +77,6 @@ def click_generate_rudiment():
   score_objects[0] = Label(score_window, image = png_objects[0], bd=0)
   score_objects[0].place(in_=score_window, anchor = CENTER, relx = .5, rely = (0/NUMBER_WIDGETS)+0.075)
   
- 
-def click_edit_rudiment():
-  rudiment_editor = Tk()
-  rudiment_editor.mainloop()
-  
-  print("Editing Rudiment...")
   
 
 def create_png(pattern, png_filename):
@@ -96,8 +88,35 @@ def create_png(pattern, png_filename):
   
   subprocess.run(f"lilypond -o {working_folder}/{png_filename} -dpreview -dno-print-pages ly/main.ly")
   os.remove(f"{working_folder}/{png_filename}.preview.pdf")
+  crop_png(f"{working_folder}/{png_filename}.preview.png")
   
   return f"{working_folder}/{png_filename}.preview.png"
+  
+
+# Removes dead whitespace from the top and bottom of the PNG file
+def crop_png(png_filepath):
+
+  img = Image.open(png_filepath)
+  
+  img_size_width, img_size_height = img.size
+  
+  pixel_rows = []
+  cropped_pixel_rows = []
+  
+  for i in range(img_size_height):
+    pixel_rows.append( [img.getpixel((x, i)) for x in range(img_size_width)] )
+    pixel_count = 0
+    for j in range(img_size_width):
+      pixel_count += 1 if pixel_rows[i][j] == (255, 255, 255) else 0
+    if not (pixel_count == img_size_width):
+      cropped_pixel_rows.append(pixel_rows[i])
+
+  flat_pixels = [pixel for row in cropped_pixel_rows for pixel in row]
+
+  new_img = Image.new(img.mode, (img_size_width, len(cropped_pixel_rows)))
+  new_img.putdata(flat_pixels)
+  new_img.save(png_filepath)
+  
   
 
 def get_random_rudiment():
@@ -116,6 +135,7 @@ def get_random_rudiment():
   
   print(random_stick_pattern)
   return random_stick_pattern
+
 
 
 def rotate_notes(note_sym, note_pattern):
