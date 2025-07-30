@@ -7,60 +7,84 @@ import random
 import time
 import os
 import sys
-# from pypdf import PdfWriter
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import letter
-from reportlab.lib.utils import ImageReader
+
+from tkinter import *
+from PIL import ImageTk, Image
+import os
 
 
-note_sym_sticking = {
-  0 : 'c16^"R"',
-  1 : 'c16^"L"',
-  2 : 'c16->^"R"',
-  3 : 'c16->^"L"',
-}
     
+working_folder = "temp"
 
 def main():
 
-  practice_pdf = canvas.Canvas("practice_sheet.pdf")  
+  create_png( get_random_rudiment(), "test_0")
+  create_png( get_random_rudiment(), "test_1")
+  create_png( get_random_rudiment(), "test_2")
+  create_png( get_random_rudiment(), "test_3")
+  
+  root = Tk()
+  root.configure(background='White')
+  
+  control_window = Frame(root, bg="grey", highlightbackground="black", highlightthickness=1) 
+  control_window.grid(row=0, column=0, sticky="nsew", padx=5, pady=5)
 
-  # Get a random sticking pattern
+  score_window = Frame(root, bg="ivory3")
+  score_window.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
+
+  variable = StringVar(control_window)
+  variable.set("Select Rudiment") # default value
+  
+  rudiment_option = OptionMenu(control_window, variable, "one", "two", "three")
+  rudiment_option["highlightthickness"] = 0
+  rudiment_option.grid(padx=10, pady=10, row=0, column=0, sticky="nsew")
+
+  my_button = Button(control_window, text="Generate", command=on_button_click)
+  my_button.grid(row=1, column=0, padx=10, pady=0, sticky="nsew")
+
+
+  img_0 = ImageTk.PhotoImage( Image.open(f"{working_folder}/test_0.preview.png"))
+  img_1 = ImageTk.PhotoImage( Image.open(f"{working_folder}/test_1.preview.png"))
+  img_2 = ImageTk.PhotoImage( Image.open(f"{working_folder}/test_2.preview.png"))
+  panel_0 = Label(score_window, image = img_0, bd=0)
+  panel_1 = Label(score_window, image = img_1, bd=0)
+  panel_2 = Label(score_window, image = img_2, bd=0)
+  panel_0.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
+  panel_1.grid(row=1, column=0, padx=10, pady=10, sticky="nsew")
+  panel_2.grid(row=2, column=0, padx=10, pady=10, sticky="nsew")
+  
+  root.mainloop()
+  
+def on_button_click():
+
+   return
+
+def create_png(pattern, png_filename):
+  
+  with open("ly/staff.ly", "w") as file:
+    rulefile_write_rhythymic_staff(file, "2/4", pattern)
+  
+  subprocess.run(f"lilypond -o {working_folder}/{png_filename} -dpreview -dno-print-pages ly/main.ly")
+  os.remove(f"{working_folder}/{png_filename}.preview.pdf")
+  
+
+def get_random_rudiment():
+
+  note_sym_sticking = {
+    0 : 'c16^"R"',
+    1 : 'c16^"L"',
+    2 : 'c16->^"R"',
+    3 : 'c16->^"L"',
+  }
+  
   stick_patterns = generate_notes(note_sym_sticking, 8)
   stick_patterns = format_notes(note_sym_sticking, stick_patterns)
   random_index = round( random.random() * len(stick_patterns) )
   random_stick_pattern = [ stick_patterns[random_index] ]
   
-  add_exercise_to_pdf(practice_pdf, random_stick_pattern)
-   
-  practice_pdf.save()   # Save and Close the PDF file
+  return random_stick_pattern
 
 
-
-def add_exercise_to_pdf(pdf_object, stick_pattern):
-  
-  stick_pdf_filename = "stick"
-  stick_image_path = f"{stick_pdf_filename}.preview.png"
-  
-
-  # Add Sticking Patstern to PDF
-  with open("ly/staff.ly", "w") as file:
-    rulefile_write_rhythymic_staff(file, "2/4", stick_pattern)
-  
-  subprocess.run(f"lilypond -o {stick_pdf_filename} -dpreview -dresolution=1000 ly/main.ly")
-  
-  img = ImageReader(stick_image_path)
-  img_width, img_height = img.getSize()
-  img_width_scaled = img_width * 0.1
-  img_height_scaled = img_height * 0.1
-
-  pdf_object.drawImage(stick_image_path, 50, 700, width=img_width_scaled, height=img_height_scaled, preserveAspectRatio=True, mask='auto')
-  
-  os.remove(stick_image_path)
-  os.remove(f"{stick_pdf_filename}.pdf")
-  os.remove(f"{stick_pdf_filename}.preview.pdf")
-
-  
 def rotate_notes(note_sym, note_pattern):
     
   note_data = []
@@ -106,18 +130,19 @@ def apply_rule(note_array):
     if (("L" in na_n2) and ("L" in na_n1) and ("L" in na_0)):
         return False
     
+    # No more than two right-hands next to eachother
     if (("R" in na_n2) and ("R" in na_n1) and ("R" in na_0)):
         return False
       
-    # No more than two RIGHT accents next to eachother
-    if (('->^"R' in na_n2) and ('->^"R' in na_n1) and ('->^"R' in na_0)):
+    # No more than two right-hand accents next to eachother
+    if (('->^"R"' in na_n2) and ('->^"R"' in na_n1) and ('->^"R"' in na_0)):
         return False
     
-    # No more than two LEFT accents next to eachother
-    if (('->^"L' in na_n2) and ('->^"L' in na_n1) and ('->^"L' in na_0)):
+    # No more than two left-hand accents next to eachother
+    if (('->^"L"' in na_n2) and ('->^"L"' in na_n1) and ('->^"L"' in na_0)):
         return False
       
-    # No more than Three consecutive accents next to eachother
+    # No more than three consecutive accents (left or right ) next to eachother
     if (('->' in na_n3) and ('->' in na_n2) and ('->' in na_n1) and ('->' in na_0)):
         return False
 
