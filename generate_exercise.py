@@ -22,8 +22,8 @@ NUMBER_WIDGETS = 6
 
 root = Tk()
 
-score_window = Frame(root, bg=COLOR_LAPIS, highlightbackground=COLOR_LAPIS, highlightthickness=1)
-control_window = Frame(root, bg=COLOR_MOSS, highlightbackground=COLOR_LAPIS, highlightthickness=1) 
+score_window = Frame(root, bg=COLOR_WHITE, highlightbackground=COLOR_WHITE, highlightthickness=1)
+control_window = Frame(root, bg=COLOR_WHITE, highlightbackground=COLOR_WHITE, highlightthickness=1) 
 
 control_subwindows = []
 score_objects = []
@@ -50,7 +50,7 @@ def gui_init():
   
   for i in range(NUMBER_WIDGETS):
     
-    control_subwindows.append(Frame(control_window, bg="red", highlightbackground=COLOR_LAPIS, highlightthickness=1))
+    control_subwindows.append(Frame(control_window, bg="red", highlightbackground=COLOR_WHITE, highlightthickness=1))
     control_subwindows[i].grid(row=i, column=0, sticky="nsew", padx=5, pady=45)
 
     button_generate = Button(control_subwindows[i], text="Generate", command=click_generate_rudiment)
@@ -66,7 +66,7 @@ def gui_init():
 
 def mouse_click(arg):
   print(arg)
-  Frame(control_window, bg="red", highlightbackground=COLOR_LAPIS, highlightthickness=1)
+  Frame(control_window, bg="red", highlightbackground=COLOR_WHITE, highlightthickness=1)
   score_objects[0]["highlightthickness"] = 1
   score_objects[0]["highlightbackground"] = COLOR_MOSS
   score_objects[0].place(in_=score_window, anchor = CENTER, relx = .5, rely = (0/NUMBER_WIDGETS)+0.075)

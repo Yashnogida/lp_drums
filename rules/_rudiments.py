@@ -19,6 +19,15 @@ def create_rulefile(title):
     paradiddles = rotate_notes([0, 1, 0, 0, 1, 0, 1, 1])  # RLRR LRLL
     paradiddles = format_notes(paradiddles)
     
+    
+    # Paradiddle-diddles
+    paradiddlediddles_L = rotate_notes([0, 1, 0, 0, 1, 1])  # RLRRLL
+    paradiddlediddles_R = rotate_notes([1, 0, 1, 1, 0, 0])  # LRLLRR
+    paradiddlediddles = paradiddlediddles_L + paradiddlediddles_R 
+    paradiddlediddles = format_notes(paradiddlediddles)
+    
+    
+    
     # Other Combinations of Singles, Doubles, and Paradiddles
     singles_doubles_paradiddles = generate_notes(8)
     singles_doubles_paradiddles = format_notes(singles_doubles_paradiddles)
@@ -51,6 +60,9 @@ def create_rulefile(title):
       rulefile_write_section_title(file, "Paradiddles")
       rulefile_write_rhythymic_staff(file, "2/4", paradiddles)
       
+      rulefile_write_section_title(file, "Paradiddlediddles")
+      rulefile_write_rhythymic_staff(file, "3/8", paradiddlediddles)
+
       rulefile_write_section_title(file, "Singles/Doubles/Paradiddles")
       rulefile_write_rhythymic_staff(file, "2/4", other_singles_doubles_curated)
       

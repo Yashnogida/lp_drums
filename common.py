@@ -88,4 +88,3 @@ def rulefile_write_section_title(file, title):
     #                               __/ |                                    
     #                              |___/                                     
 
-    
